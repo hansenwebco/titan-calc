@@ -12,7 +12,7 @@ function getquerystring(param) {
 function loadHtml(id, file) {
 
     var request = new XMLHttpRequest();
-    request.open('GET', '/html/' + file, false);
+    request.open('GET', '/skill-html/' + file, false);
 
     request.onload = function() {
     if (request.status >= 200 && request.status < 400) {

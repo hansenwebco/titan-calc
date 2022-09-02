@@ -15,7 +15,7 @@ module.exports = {
     './src/css/main.css'
   ],
   output: {
-    path: `${__dirname}/dist`,
+    path: `${__dirname}/public/dist`,
     publicPath: '/',
     filename: 'titancalc.js',
     clean: true,
@@ -25,7 +25,7 @@ module.exports = {
       writeToDisk: true,
     },
     static: {
-      directory: __dirname
+      directory: __dirname + "/public"
     }
   },
   module: {
