@@ -19,17 +19,23 @@ That said, it isn't too bad to make updates too and honestly it would need to be
 To make code changes you will need Node.js and NPM on your machine to do any updates.
 
 Download the code to your local machine.
-```https://github.com/hansenwebco/titan-calc.git```
+
+```git clone https://github.com/hansenwebco/titan-calc.git```
 
 Install the NPM packages associated with the project with:
+
 ```npm install```
 
 To run the site in debug mode use, this will build the JavaScript for the site and launch a debug session with hot reloading in place in your default browser.
+
 ```npm run dev```
 
 The site HTML content can be found in the ```/public``` folder.
+
 The site JS and CSS can be found in the ```/src``` folder.
+
 When build the packaged js/css will be put in ```/public/dist/```
+
 
 ## Live Site
 
