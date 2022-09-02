@@ -10,6 +10,7 @@ app.get('/TitanCalc.asp', function(request, response) {
   response.redirect(301, 'http://www.titancalc.com/TitanCalc.html' + url.parse(request.url,true).search)
 })
 
+
 app.listen(app.get('port'), function() {
   console.log("Node app is running at localhost:" + app.get('port'))
 })
