@@ -1,0 +1,50 @@
+
+Earth:
+
+Earth Enchantment - 12 points not 15, updated damages and radius
+Flame Surge - 12 points not 8, updated damages
+Brimstone - 8 points not 12,  updated spell info
+Heatsheid -  12 points not 15, updated spell info
+Ring of Flame -  8 points not 12, updated spell info
+Volcanic Orb - 12 points not 20,updated spell info
+Stone Form -  12 points not 15, updated spell info
+Core Dweller - - updated spell info
+Barrage - 8 points not 6, updated spell info
+Inner Fire - 8 points not 10, updated spell info
+Soften Metal - updated spell info
+Conflagration - 8 points, not 15, updated spell info
+Molten Rock - 8 points not 15, updated spell info
+Wildfire - updated spell info
+Flame Arch - 12 points not 10, updated spell info
+Fragmentation - was misnamed Flame Arch, updated spell info
+Volativity -  updated spell info
+Metamoprhosis - 8 points not 10, 
+Eruption - - updated spell info
+
+Defense:
+
+Concussive Blow - updated spell info
+Battle Awareness - updated spell info
+
+Hunting:
+
+Ensnare - 6 points not 8, updated spell info
+Take Down - updated spell info
+Wood Lore - updated spell info
+Marksmanship - 12 points not 15, updated spell info
+Study Prey - 8 points not 12
+Punture Shot Arrows - 12 points not 10
+Art of the Hunt - updated spell info
+Herbal Remedy - updated spell info
+Barbed Netting - updated spell info
+Call of the Hunt - updated spell info
+Monster Lure - updated spell info
+Study Prey - updated spell info
+
+Nature:
+
+Regrowth - 16 points not 15 - was misnumberd in the data
+Nature's Wrath - 12 points not 10 - updated spell info
+Refresh - updated spell info
+Sanctuary - updated spell info
+Dissemination - fixed icon

@@ -1,0 +1,263 @@
+#spellname {
+	font-size: 10pt;
+	color: White;
+	font-weight: bold;
+	font-family: Times New Roman;
+}
+
+#pointsremaining {
+	font-family: Arial;
+	font-size: 7pt;
+	color: White;
+	text-align: center;
+}
+
+#masteryname {
+	color: rgb(255, 165, 0);
+	font-size: 14pt;
+	font-weight: bold;
+}
+
+
+#atttitle {
+	font-weight: bold;
+	font-size: 10pt;
+}
+
+#health {
+	color: red;
+	text-align: right;
+}
+
+#energy {
+	color: lightblue;
+	text-align: right;
+}
+
+#int {
+	color: white;
+	text-align: right;
+}
+
+#dex {
+	color: white;
+	text-align: right;
+}
+
+#str {
+	color: white;
+	text-align: right;
+}
+
+
+#pressadd {
+	color: #83DE7F;
+	font-size: 8pt;
+}
+
+#statstable {
+	border: solid 1px gold;
+}
+
+#earth {
+	border: solid 1px #222222;
+	/*background: url(images/earth_background.jpg) no-repeat;*/
+}
+
+#spirit {
+	border: solid 1px #222222;
+}
+
+#rogue {
+	border: solid 1px #222222;
+}
+
+#storm {
+	border: solid 1px #222222;
+}
+
+#nature {
+	border: solid 1px #222222;
+	/*background: url(images/nature_background.jpg) no-repeat;*/
+	width: 250px;
+	height: 250px;
+}
+
+#hunting {
+	border: solid 1px #222222;
+}
+
+#defense {
+	border: solid 1px #222222;
+}
+
+#dream {
+	border: solid 1px #222222;
+
+}
+
+#warfare {
+	/*background: url(images/warfare_background.jpg) no-repeat;*/
+	border: solid 1px #222222;
+
+}
+
+#spells {
+	color: White;
+	width: 80%;
+	font-size: 7pt;
+	font-family: MS Reference Sans Serif, Arial;
+	width: 95%;
+	padding: 10px;
+}
+
+#pageheader {
+	font-family: Arial;
+	font-weight: bolder;
+	font-size: 15pt;
+	color: White;
+}
+
+#spelldesc {
+	font-size: 8pt;
+	color: White;
+	font-family: Times New Roman;
+}
+
+#currentspell {
+	font-size: 8pt;
+	font-family: Times New Roman;
+	color: #FFFFFF;
+}
+
+#nextspell {
+	font-size: 8pt;
+	font-family: Times New Roman;
+	color: #A09D98;
+}
+
+#spelllistingheader {
+	font-size: 10pt;
+	color: White;
+	font-weight: bold;
+	font-family: Arial;
+}
+
+#currentranklevel {
+	font-size: 8pt;
+	font-family: Times New Roman;
+	color: #ECE89F;
+}
+
+#tip {
+	width: 300px;
+	position: absolute;
+	border: 1px solid #CCCC00;
+	background-color: Black;
+	padding: 5px;
+	filter: alpha(opacity=90);
+	/* IE's opacity*/
+	opacity: 0.90;
+}
+
+#prereq {
+	color: green;
+	font-size: 8pt;
+	font-family: Times New Roman;
+}
+
+#nextranklevel {
+	font-size: 8pt;
+	font-family: Times New Roman;
+	color: #ECE89F;
+}
+
+td {
+	font-size: 7pt;
+	color: white;
+	font-family: arial;
+}
+
+.b32pt {
+	background-color: Black;
+	color: #555555;
+	border-top: 1px solid #CCCC00;
+	border-left: 1px solid #CCCC00;
+	border-right: 1px solid #CCCC00;
+	border-bottom: none;
+
+
+}
+
+.b24pt {
+	background-color: Black;
+	color: #555555;
+	border-left: 1px solid #CCCC00;
+	border-right: 1px solid #CCCC00;
+	border-top: none;
+	border-bottom: none;
+}
+
+.b16pt {
+	background-color: Black;
+	color: #555555;
+	border-left: 1px solid #CCCC00;
+	border-right: 1px solid #CCCC00;
+	border-top: none;
+	border-bottom: none;
+}
+
+.b10pt {
+	background-color: Black;
+	color: #555555;
+	border-left: 1px solid #CCCC00;
+	border-right: 1px solid #CCCC00;
+	border-top: none;
+	border-bottom: none;
+}
+
+.b4pt {
+	background-color: Black;
+	color: #555555;
+	border-left: 1px solid #CCCC00;
+	border-right: 1px solid #CCCC00;
+	border-top: none;
+	border-bottom: none;
+}
+
+.b1pt {
+	background-color: Black;
+	border-left: 1px solid #CCCC00;
+	border-right: 1px solid #CCCC00;
+	border-top: none;
+	color: #555555;
+}
+
+#button {}
+
+#skilladjust {}
+
+#skilladjust select {
+	background: black;
+	color: White;
+	border: solid 1px #DDDDDD;
+	font-size: 7pt;
+
+}
+
+#masteryheader {
+	display:flex;
+	align-items: center;
+}
+
+#masteryinfo {
+	float: left;
+	height: 22px;
+	margin-right: 5px;
+}
+
+#mastersubinfo {
+	font-size: 10px;
+	
+
+}
