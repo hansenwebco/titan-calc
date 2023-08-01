@@ -7,7 +7,7 @@ app.set('port', (process.env.PORT || 80))
 app.use(express.static(__dirname + '/public'))
 
 app.get('/TitanCalc.asp', function(request, response) {
-  response.redirect(301, 'http://www.titancalc.com/TitanCalc.html' + url.parse(request.url,true).search)
+    response.redirect(301, 'https://www.titancalc.com/TitanCalc.html' + url.parse(request.url, true).search)
 })
 
 
