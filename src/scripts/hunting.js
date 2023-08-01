@@ -32,7 +32,7 @@ function loadHunter() {
   if (!AttributesBase[0]) { // base att's are only set one time
     AttributesBase[0] = new Attribute(300, 300, 50, 50, 50) // base stats for characters
   }
-  Attributes = new Array();
+  let Attributes = [];
   Attributes[1] = new Attribute(24, 0, 2, 2, 0)
   Attributes[2] = new Attribute(49, 0, 3, 5, 0)
   Attributes[3] = new Attribute(73, 0, 5, 7, 0)
@@ -66,10 +66,10 @@ function loadHunter() {
   Attributes[31] = new Attribute(759, 0, 54, 77, 0)
   Attributes[32] = new Attribute(784, 0, 56, 80, 0)
 
-  Skills = new Array();
+  let Skills = [];
 
   // Ensnare
-  Spells = new Array();
+  let Spells = [];
   Spells[1] = new SpellInfo("15 Energy Cost, 3 Second Duration, 15 Piercing Damage, -33% Defensive Ability")
   Spells[2] = new SpellInfo("17 Energy Cost, 4 Second Duration, 19 Piercing Damage, -33% Defensive Ability")
   Spells[3] = new SpellInfo("19 Energy Cost, 5 Second Duration, 23 Piercing Damage, -33% Defensive Ability")
@@ -79,7 +79,7 @@ function loadHunter() {
   Skills[0] = new Skill("Ensnare", 1, Spells, -1, "Casts a weighted net around the feet of an enemy holding them in place but not preventing them from attacking if you are within their range.")
 
   // Take Down
-  Spells = new Array();
+  Spells = [];
   Spells[1] = new SpellInfo("30 Energy Cost, 25 Piercing Damage, 8% Reduction to Enemy's Health, +300% Movement")
   Spells[2] = new SpellInfo("32 Energy Cost, 31 Piercing Damage, 12% Reduction to Enemy's Health, +300% Movement")
   Spells[3] = new SpellInfo("34 Energy Cost, 38 Piercing Damage, 15% Reduction to Enemy's Health, +300% Movement")
@@ -95,7 +95,7 @@ function loadHunter() {
   Skills[1] = new Skill("Take Down", 1, Spells, -1, "A brutal thrust from your spear delivers devastating piercing damage to enemies and diminishes a portion of your enemy's total life.")
 
   // Wood Lore
-  Spells = new Array();
+  Spells = [];
   Spells[1] = new SpellInfo("+10% Defensive Ability, +5% Attack Speed")
   Spells[2] = new SpellInfo("+14% Defensive Ability, +8% Attack Speed")
   Spells[3] = new SpellInfo("+18% Defensive Ability, +12% Attack Speed")
@@ -105,7 +105,7 @@ function loadHunter() {
   Skills[2] = new Skill("Wood Lore", 1, Spells, -1, "Central to survival in the wilderness is the ability to hunt with bow and spear. Great familiarity with these weapons allows you to wield them with exceptional speed and precision.")
 
   // Marksmanship
-  Spells = new Array();
+  Spells = [];
   Spells[1] = new SpellInfo("2 Energy Cost, 4 Piercing Damage, +30% Increase in Projectile Speed")
   Spells[2] = new SpellInfo("2 Energy Cost, 8 Piercing Damage, +40% Increase in Projectile Speed")
   Spells[3] = new SpellInfo("2 Energy Cost, 12 Piercing Damage, +50% Increase in Projectile Speed")
@@ -121,7 +121,7 @@ function loadHunter() {
   Skills[3] = new Skill("Marksmanship", 4, Spells, -1, "Marksmanship skill allows you to create and fire arrows that fly faster and increase pierce damage.")
 
   // Art of the Hunt
-  Spells = new Array();
+  Spells = [];
   Spells[1] = new SpellInfo("15.0 Meter Radius, +12% Pierce Damage, +15% Bleeding Damage, +75 Energy Reserved, +3 Damage to Beastmen, +3 Damage to Animals")
   Spells[2] = new SpellInfo("15.0 Meter Radius, +18% Pierce Damage, +18% Bleeding Damage, +75 Energy Reserved, +5 Damage to Beastmen, +5 Damage to Animals")
   Spells[3] = new SpellInfo("15.0 Meter Radius, +23% Pierce Damage, +21% Bleeding Damage, +75 Energy Reserved, +8 Damage to Beastmen, +8 Damage to Animals")
@@ -137,7 +137,7 @@ function loadHunter() {
   Skills[4] = new Skill("Art of the Hunt", 4, Spells, -1, "Hunting experience gives you the edge when facing familiar quarry such as Animals and Beastmen.")
 
   // Herbal Remedy
-  Spells = new Array();
+  Spells = [];
   Spells[1] = new SpellInfo("35 Energy Cost, 180 Second Duration, +3.0 Health Regeneration/Second, 30% Poison Resistance")
   Spells[2] = new SpellInfo("40 Energy Cost, 240 Second Duration, +3.6 Health Regeneration/Second, 38% Poison Resistance")
   Spells[3] = new SpellInfo("45 Energy Cost, 300 Second Duration, +4.2 Health Regeneration/Second, 46% Poison Resistance")
@@ -147,7 +147,7 @@ function loadHunter() {
   Skills[5] = new Skill("Herbal Remedy", 4, Spells, -1, "Living off the land, you learn to identify and utilize medicinal plants to create healing salves. When applied it will fortify against poison and healing is accelerated for a duration.")
 
   // Barbed Netting
-  Spells = new Array();
+  Spells = [];
   Spells[1] = new SpellInfo("45 Bleeding Damage Over 3 Seconds")
   Spells[2] = new SpellInfo("57 Bleeding Damage Over 3 Seconds")
   Spells[3] = new SpellInfo("72 Bleeding Damage Over 3 Seconds")
@@ -159,7 +159,7 @@ function loadHunter() {
   Skills[6] = new Skill("Barbed Netting", 10, Spells, 0, "Barbed hooks on the hunter's Ensnare net tear into enemies as they struggle causing them to bleed.")
 
   // Call of the Hunt
-  Spells = new Array();
+  Spells = [];
   Spells[1] = new SpellInfo("45 Energy Cost, 28 Second Duration, 15.0 Meter Radius, 18 Bleeding Damage Over 3 Seconds, +15% Attack Speed, +33% Damage to Beastmen, +33% Damage to Animals")
   Spells[2] = new SpellInfo("47 Energy Cost, 31 Second Duration, 15.0 Meter Radius, 22 Bleeding Damage Over 3 Seconds, +17% Attack Speed, +33% Damage to Beastmen, +33% Damage to Animals")
   Spells[3] = new SpellInfo("49 Energy Cost, 33 Second Duration, 15.0 Meter Radius, 26 Bleeding Damage Over 3 Seconds, +19% Attack Speed, +33% Damage to Beastmen, +33% Damage to Animals")
@@ -171,7 +171,7 @@ function loadHunter() {
   Skills[7] = new Skill("Call of the Hunt", 10, Spells, -1, "Those who answer the call of the hunt will fight with increased speed and cunning.")
 
   // Eviscerate
-  Spells = new Array();
+  Spells = [];
   Spells[1] = new SpellInfo("5 Energy Cost, 33 Bleeding Damage Over 3 Seconds")
   Spells[2] = new SpellInfo("5 Energy Cost, 45 Bleeding Damage Over 3 Seconds")
   Spells[3] = new SpellInfo("5 Energy Cost, 60 Bleeding Damage Over 3 Seconds")
@@ -185,7 +185,7 @@ function loadHunter() {
   Skills[8] = new Skill("Eviscerate", 10, Spells, 1, "Targeting vital weak-points on your enemy causes sustained damage from bleeding.")
 
   // Monster Lure
-  Spells = new Array();
+  Spells = [];
   Spells[1] = new SpellInfo("34 Energy Cost, 3 Summon Limit, Monster Lure Attributes: Life Time 30 Seconds, 120 Health, 15 Energy, Monster Lure Ability: Provoke (15 Energy Cost, 5.0 Meter Radius)")
   Spells[2] = new SpellInfo("38 Energy Cost, 3 Summon Limit, Monster Lure Attributes: Life Time 30 Seconds, 150 Health, 15 Energy, Monster Lure Ability: Provoke (15 Energy Cost, 6.0 Meter Radius)")
   Spells[3] = new SpellInfo("42 Energy Cost, 3 Summon Limit, Monster Lure Attributes: Life Time 30 Seconds, 180 Health, 15 Energy, Monster Lure Ability: Provoke (15 Energy Cost, 7.0 Meter Radius)")
@@ -195,7 +195,7 @@ function loadHunter() {
   Skills[9] = new Skill("Monster Lure", 10, Spells, -1, "Drops down a decoy to attract the attention of nearby monsters.")
 
   // Study Prey
-  Spells = new Array();
+  Spells = [];
   Spells[1] = new SpellInfo("35 Energy Cost, 8 Second Duration, 6.0 Meter Radius, -21% Damage Resistance, -21% Pierce Resistance")
   Spells[2] = new SpellInfo("35 Energy Cost, 8 Second Duration, 6.0 Meter Radius, -26% Damage Resistance, -26% Pierce Resistance")
   Spells[3] = new SpellInfo("35 Energy Cost, 8 Second Duration, 6.0 Meter Radius, -30% Damage Resistance, -30% Pierce Resistance")
@@ -207,7 +207,7 @@ function loadHunter() {
   Skills[10] = new Skill("Study Prey", 16, Spells, -1, "By observing your prey from a distance you may discover its weakness, resulting in greater pierce damage.")
 
   // Puncture Shot Arrows
-  Spells = new Array();
+  Spells = [];
   Spells[1] = new SpellInfo("1 Energy Cost, 8% Chance to Pass Through Enemies, +5% Pierce Damage, +9% Bleeding Damage")
   Spells[2] = new SpellInfo("1 Energy Cost, 12% Chance to Pass Through Enemies, +8% Pierce Damage, +12% Bleeding Damage")
   Spells[3] = new SpellInfo("1 Energy Cost, 16% Chance to Pass Through Enemies, +10% Pierce Damage, +15% Bleeding Damage")
@@ -223,7 +223,7 @@ function loadHunter() {
   Skills[11] = new Skill("Puncture Shot Arrows", 16, Spells, 3, "Incorporating a more streamlined shaft into your arrows allows them to pass through targets and hit additional enemies in their path.")
 
   // Gouge
-  Spells = new Array();
+  Spells = [];
   Spells[1] = new SpellInfo("6% Chance to be Used, 48 Bleeding Damage Over 3 Seconds")
   Spells[2] = new SpellInfo("8% Chance to be Used, 72 Bleeding Damage Over 3 Seconds")
   Spells[3] = new SpellInfo("10% Chance to be Used, 99 Bleeding Damage Over 3 Seconds")
@@ -233,7 +233,7 @@ function loadHunter() {
   Skills[12] = new Skill("Gouge", 16, Spells, -1, "A combat technique that uses the spear or bow to inflict deep wounds that will result in prolonged bleeding.")
 
   // Find Cover
-  Spells = new Array();
+  Spells = [];
   Spells[1] = new SpellInfo("+8% Chance to Avoid Projectiles, +10 Energy Reserved")
   Spells[2] = new SpellInfo("+10% Chance to Avoid Projectiles, +10 Energy Reserved")
   Spells[3] = new SpellInfo("+12% Chance to Avoid Projectiles, +10 Energy Reserved")
@@ -245,7 +245,7 @@ function loadHunter() {
   Skills[13] = new Skill("Find Cover", 16, Spells, 4, "Making use of available cover as you press your attack allows you to avoid unnecessary damage.")
 
   // Exploit Weakness
-  Spells = new Array();
+  Spells = [];
   Spells[1] = new SpellInfo("10 Energy Cost, +58% Pierce Damage, +58% Bleeding Damage")
   Spells[2] = new SpellInfo("10 Energy Cost, +66% Pierce Damage, +66% Bleeding Damage")
   Spells[3] = new SpellInfo("10 Energy Cost, +77% Pierce Damage, +77% Bleeding Damage")
@@ -259,7 +259,7 @@ function loadHunter() {
   Skills[14] = new Skill("Exploit Weakness", 24, Spells, 7, "Take full advantage of your enemy's mistakes and vulnerable moments to inflict savage wounds.")
 
   // Trail Blazing
-  Spells = new Array();
+  Spells = [];
   Spells[1] = new SpellInfo("+50 Energy Reserved, +5% Movement, 100% Reduced Entrapment Duration")
   Spells[2] = new SpellInfo("+50 Energy Reserved, +8% Movement, 100% Reduced Entrapment Duration")
   Spells[3] = new SpellInfo("+50 Energy Reserved, +10% Movement, 100% Reduced Entrapment Duration")
@@ -269,7 +269,7 @@ function loadHunter() {
   Skills[15] = new Skill("Trail Blazing", 24, Spells, 4, "Grants those who follow the hunt endurance to relentlessly track their quarry, preventing even the most tangled thicket from slowing pursuit.")
 
   // Detonate
-  Spells = new Array();
+  Spells = [];
   Spells[1] = new SpellInfo("15 Energy Cost, 6 Projectiles, 3.0 Meter Radius, 36-58 Fire Damage")
   Spells[2] = new SpellInfo("15 Energy Cost, 6 Projectiles, 3.0 Meter Radius, 42-66 Fire Damage")
   Spells[3] = new SpellInfo("15 Energy Cost, 6 Projectiles, 3.0 Meter Radius, 49-75 Fire Damage")
@@ -285,7 +285,7 @@ function loadHunter() {
   Skills[16] = new Skill("Detonate", 24, Spells, 9, "Adds a hidden explosive charge to the monster lure causing it to detonate when destroyed. In order to detonate the lure must be at full energy.")
 
   // Flush Out 
-  Spells = new Array();
+  Spells = [];
   Spells[1] = new SpellInfo("10 Energy Cost, -14% Defensive Ability, -14% Elemental Resistance")
   Spells[2] = new SpellInfo("10 Energy Cost, -18% Defensive Ability, -18% Elemental Resistance")
   Spells[3] = new SpellInfo("10 Energy Cost, -22% Defensive Ability, -22% Elemental Resistance")
@@ -295,7 +295,7 @@ function loadHunter() {
   Skills[17] = new Skill("Flush Out", 32, Spells, 10, "Draw your enemies into the open, making them more vulnerable to attack.")
 
   // Scatter Shot Arrows
-  Spells = new Array();
+  Spells = [];
   Spells[1] = new SpellInfo("1 Energy Cost, 3-4 Fragments, 15 Piercing Damage")
   Spells[2] = new SpellInfo("1 Energy Cost, 3-5 Fragments, 24 Piercing Damage")
   Spells[3] = new SpellInfo("1 Energy Cost, 4-5 Fragments, 33 Piercing Damage")
@@ -311,7 +311,7 @@ function loadHunter() {
   Skills[18] = new Skill("Scatter Shot Arrows", 32, Spells, 3, "A secret of master fletchers is the ability to craft special arrow heads that burst on impact sending out razor-sharp fragments in all directions.")
 
   // Volley
-  Spells = new Array();
+  Spells = [];
   Spells[1] = new SpellInfo("Launches 3 Projectiles, 6% Chance to be Used")
   Spells[2] = new SpellInfo("Launches 3 Projectiles, 8% Chance to be Used")
   Spells[3] = new SpellInfo("Launches 3 Projectiles, 10% Chance to be Used")

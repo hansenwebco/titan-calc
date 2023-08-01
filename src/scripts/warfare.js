@@ -34,7 +34,7 @@ function loadWarfare() {
   if (!AttributesBase[0]) { // base att's are only set one time
     AttributesBase[0] = new Attribute(300, 300, 50, 50, 50) // base stats for characters
   }
-  Attributes = new Array();
+  let Attributes = [];
   Attributes[1] = new Attribute(40, 0, 2, 2, 0)
   Attributes[2] = new Attribute(80, 0, 4, 4, 0)
   Attributes[3] = new Attribute(120, 0, 6, 6, 0)
@@ -69,11 +69,10 @@ function loadWarfare() {
   Attributes[32] = new Attribute(1280, 0, 64, 64, 0)
 
 
-
-  Skills = new Array();
+  let Skills = [];
 
   // Weapon Training
-  Spells = new Array();
+  let Spells = [];
   Spells[1] = new SpellInfo("+10% Offensive Ability, +5% Attack Speed")
   Spells[2] = new SpellInfo("+14% Offensive Ability, +8% Attack Speed")
   Spells[3] = new SpellInfo("+18% Offensive Ability, +10% Attack Speed")
@@ -83,7 +82,7 @@ function loadWarfare() {
   Skills[0] = new Skill("Weapon Training", 1, Spells, -1, "	Years of training with the sword, axe, and club allow you to attack faster and react quickly to enemy attacks.")
 
   // Battle Rage
-  Spells = new Array();
+  Spells = [];
   Spells[1] = new SpellInfo("8% Chance of Activating, 10 Second Duration, 8 (Physical)Damage, +50% Offensive Ability")
   Spells[2] = new SpellInfo("8% Chance of Activating, 10 Second Duration, 12 (Physical)Damage, +50% Offensive Ability")
   Spells[3] = new SpellInfo("8% Chance of Activating, 10 Second Duration, 16 (Physical)Damage, +50% Offensive Ability")
@@ -99,7 +98,7 @@ function loadWarfare() {
   Skills[1] = new Skill("Battle Rage", 1, Spells, -1, "Each enemy hit has a chance of sending you into a battle rage that adds bonus damage to attacks and increases Offensive Ability for a short duration.")
 
   // Onslaught
-  Spells = new Array();
+  Spells = [];
   Spells[1] = new SpellInfo("1 Charge Level, 1 Energy Cost, +10% Damage")
   Spells[2] = new SpellInfo("2 Charge Levels, 1 Energy Cost, +15% Damage")
   Spells[3] = new SpellInfo("3 Charge Levels, 1 Energy Cost, +19% Damage")
@@ -111,7 +110,7 @@ function loadWarfare() {
   Skills[2] = new Skill("Onslaught", 1, Spells, -1, "When used as your default weapon attack, Onslaught increases your attack damage with each successive hit. The power of your Onslaught dissipates rapidly when not actively attacking.")
 
   // Dual Wield
-  Spells = new Array();
+  Spells = [];
   Spells[1] = new SpellInfo("12% Chance to be Used")
   Spells[2] = new SpellInfo("14% Chance to be Used")
   Spells[3] = new SpellInfo("16% Chance to be Used")
@@ -121,7 +120,7 @@ function loadWarfare() {
   Skills[3] = new Skill("Dual Wield", 4, Spells, -1, "Learn to effectively wield two weapons.")
 
   // Dodge Attack
-  Spells = new Array();
+  Spells = [];
   Spells[1] = new SpellInfo("3% Chance to Dodge Attacks")
   Spells[2] = new SpellInfo("6% Chance to Dodge Attacks")
   Spells[3] = new SpellInfo("8% Chance to Dodge Attacks")
@@ -133,7 +132,7 @@ function loadWarfare() {
   Skills[4] = new Skill("Dodge Attack", 4, Spells, -1, "Even the sturdiest armor has its chinks. The best way to stay alive is to not get hit.")
 
   // Ignore Pain
-  Spells = new Array();
+  Spells = [];
   Spells[1] = new SpellInfo("3% Damage Resistance, 3% Pierce Resistance")
   Spells[2] = new SpellInfo("6% Damage Resistance, 6% Pierce Resistance")
   Spells[3] = new SpellInfo("8% Damage Resistance, 8% Pierce Resistance")
@@ -143,7 +142,7 @@ function loadWarfare() {
   Skills[5] = new Skill("Ignore Pain", 4, Spells, 2, "Total focus in the heat of battle allows you to ignore physical and piercing damage.")
 
   // War Horn
-  Spells = new Array();
+  Spells = [];
   Spells[1] = new SpellInfo("52 Energy Cost, 8 Meter Radius, 1.5-3.0 Seconds of Stun")
   Spells[2] = new SpellInfo("54 Energy Cost, 8.4 Meter Radius, 1.5-3.5 Seconds of Stun")
   Spells[3] = new SpellInfo("56 Energy Cost, 8.8 Meter Radius, 1.5-3.9 Seconds of Stun")
@@ -157,7 +156,7 @@ function loadWarfare() {
   Skills[6] = new Skill("War Horn", 4, Spells, -1, "The triumphant call of your war horn temporarily stuns enemies.")
 
   // Hew
-  Spells = new Array();
+  Spells = [];
   Spells[1] = new SpellInfo("3% Chance to be Used, +50% Damage")
   Spells[2] = new SpellInfo("4% Chance to be Used, +50% Damage")
   Spells[3] = new SpellInfo("6% Chance to be Used, +50% Damage")
@@ -167,7 +166,7 @@ function loadWarfare() {
   Skills[7] = new Skill("Hew", 10, Spells, 3, "A Dual Wield technique that increases damage by 50%.")
 
   // Crushing Blow
-  Spells = new Array();
+  Spells = [];
   Spells[1] = new SpellInfo("25% Chance of 25-51 (Physical)Damage")
   Spells[2] = new SpellInfo("25% Chance of 37-65 (Physical)Damage")
   Spells[3] = new SpellInfo("25% Chance of 50-79 (Physical)Damage")
@@ -183,7 +182,7 @@ function loadWarfare() {
   Skills[8] = new Skill("Crushing Blow", 10, Spells, 1, "Provides a chance to critical hit for increased damage while in Battle Rage.")
 
   // Battle Standard
-  Spells = new Array();
+  Spells = [];
   Spells[1] = new SpellInfo("50 Energy Cost, Battle Standard Attributes: Life Time 18 Seconds, 180 Health, Battle Standard Abilities: Battle Standard (12% Damage Absorption, +1 to All Skills, 24 Second Duration, 12.0 Meter Radius, +16 Offensive Ability)")
   Spells[2] = new SpellInfo("50 Energy Cost, Battle Standard Attributes: Life Time 20 Seconds, 210 Health, Battle Standard Abilities: Battle Standard (15% Damage Absorption, +1 to All Skills, 30 Second Duration, 12.0 Meter Radius, +24 Offensive Ability)")
   Spells[3] = new SpellInfo("50 Energy Cost, Battle Standard Attributes: Life Time 22 Seconds, 240 Health, Battle Standard Abilities: Battle Standard (18% Damage Absorption, +1 to All Skills, 36 Second Duration, 12.0 Meter Radius, +32 Offensive Ability)")
@@ -194,10 +193,10 @@ function loadWarfare() {
   Spells[8] = new SpellInfo("50 Energy Cost, Battle Standard Attributes: Life Time 32 Seconds, 390 Health, Battle Standard Abilities: Battle Standard (30% Damage Absorption, +1 to All Skills, 66 Second Duration, 12.0 Meter Radius, +72 Offensive Ability)")
   Spells[9] = new SpellInfo("50 Energy Cost, Battle Standard Attributes: Life Time 34 Seconds, 420 Health, Battle Standard Abilities: Battle Standard (33% Damage Absorption, +1 to All Skills, 72 Second Duration, 12.0 Meter Radius, +80 Offensive Ability)")
   Spells[10] = new SpellInfo("50 Energy Cost, Battle Standard Attributes: Life Time 36 Seconds, 450 Health, Battle Standard Abilities: Battle Standard (36% Damage Absorption, +1 to All Skills, 78 Second Duration, 12.0 Meter Radius, +88 Offensive Ability)")
-  Skills[9] = new Skill("Battle Standard", 10, Spells, -1, "Throw down a mighty standard to emoblden the hearts of nearby allies.")
+  Skills[9] = new Skill("Battle Standard", 10, Spells, -1, "Throw down a mighty standard to embolden the hearts of nearby allies.")
 
   // War Wind
-  Spells = new Array();
+  Spells = [];
   Spells[1] = new SpellInfo("65 Energy Cost, 360 Arc of Attack, 4 Target Maximum, -25 (Physical)Damage, +300% Movement")
   Spells[2] = new SpellInfo("68 Energy Cost, 360 Arc of Attack, 4 Target Maximum, -20 (Physical)Damage, +300% Movement")
   Spells[3] = new SpellInfo("71 Energy Cost, 360 Arc of Attack, 4 Target Maximum, -15 (Physical)Damage, +300% Movement")
@@ -209,7 +208,7 @@ function loadWarfare() {
   Skills[10] = new Skill("War Wind", 10, Spells, -1, "Executes a devastating spinning attack that can damage up to four enemies.")
 
   // Cross Cut
-  Spells = new Array();
+  Spells = [];
   Spells[1] = new SpellInfo("3% Chance to be Used, 90 Arc of Attack, 2 Target Maximum, 15 Bleeding Damage over 5 Seconds")
   Spells[2] = new SpellInfo("4% Chance to be Used, 90 Arc of Attack, 2 Target Maximum, 30 Bleeding Damage over 5 Seconds")
   Spells[3] = new SpellInfo("6% Chance to be Used, 90 Arc of Attack, 2 Target Maximum, 40 Bleeding Damage over 5 Seconds")
@@ -219,7 +218,7 @@ function loadWarfare() {
   Skills[11] = new Skill("Cross Cut", 16, Spells, 3, "A Dual Wield technique that can hit up to 2 enemies with a cross-cutting scissor motion.")
 
   // Hamstring
-  Spells = new Array();
+  Spells = [];
   Spells[1] = new SpellInfo("8 Reduced Defensive Ability for 3 Seconds, 8 Reduced Armor for 6 Seconds, 10% Slower Movement for 5 Seconds")
   Spells[2] = new SpellInfo("12 Reduced Defensive Ability for 3 Seconds, 12 Reduced Armor for 6 Seconds, 15% Slower Movement for 5 Seconds")
   Spells[3] = new SpellInfo("16 Reduced Defensive Ability for 3 Seconds, 16 Reduced Armor for 6 Seconds, 20% Slower Movement for 5 Seconds")
@@ -229,7 +228,7 @@ function loadWarfare() {
   Skills[12] = new Skill("Hamstring", 16, Spells, 2, "An attack aimed at the enemy's legs reduces their ability to run and increases their vulnerability for a short duration.")
 
   // Counter Attack
-  Spells = new Array();
+  Spells = [];
   Spells[1] = new SpellInfo("15% Chance of 18-31 (Physical)Damage Retaliation")
   Spells[2] = new SpellInfo("15% Chance of 20-35 (Physical)Damage Retaliation")
   Spells[3] = new SpellInfo("15% Chance of 23-39 (Physical)Damage Retaliation")
@@ -245,7 +244,7 @@ function loadWarfare() {
   Skills[13] = new Skill("Counter Attack", 24, Spells, 1, "Provides a chance to counter attack an enemy after being hit in Battle Rage.")
 
   // Triumph
-  Spells = new Array();
+  Spells = [];
   Spells[1] = new SpellInfo("12.0 Meter Radius, -15% (Physical)Damage, -15% Damage Resistance, -50% Stun Resistance")
   Spells[2] = new SpellInfo("12.0 Meter Radius, -20% (Physical)Damage, -20% Damage Resistance, -50% Stun Resistance")
   Spells[3] = new SpellInfo("12.0 Meter Radius, -25% (Physical)Damage, -25% Damage Resistance, -50% Stun Resistance")
@@ -255,7 +254,7 @@ function loadWarfare() {
   Skills[14] = new Skill("Triumph", 24, Spells, 9, "Seeing the inevitability of your triumph, enemies lose hope and the strength of their attack diminishes.")
 
   // Lacerate
-  Spells = new Array();
+  Spells = [];
   Spells[1] = new SpellInfo("20 Energy Cost, 1 Target Maximum, 19 Bleeding Damage Over 3 Seconds")
   Spells[2] = new SpellInfo("20 Energy Cost, 1 Target Maximum, 27 Bleeding Damage Over 3 Seconds")
   Spells[3] = new SpellInfo("20 Energy Cost, 1 Target Maximum, 35 Bleeding Damage Over 3 Seconds")
@@ -267,7 +266,7 @@ function loadWarfare() {
   Skills[15] = new Skill("Lacerate", 24, Spells, 10, "Adds bleeding damage to War Wind and increases the number of enemies hit. Requires that at least one weapon be a sword or axe.")
 
   // Doom Horn
-  Spells = new Array();
+  Spells = [];
   Spells[1] = new SpellInfo("20 Energy Cost, 9% Reduction to Enemy's Health, 12 Reduced Armor for 10 Seconds")
   Spells[2] = new SpellInfo("20 Energy Cost, 12% Reduction to Enemy's Health, 16 Reduced Armor for 10 Seconds")
   Spells[3] = new SpellInfo("20 Energy Cost, 15% Reduction to Enemy's Health, 20 Reduced Armor for 10 Seconds")
@@ -277,7 +276,7 @@ function loadWarfare() {
   Skills[16] = new Skill("Doom Horn", 24, Spells, 6, "Your War Horn heralds the doom of your enemies, shattering their nerves and reducing their ability to defend themselves.")
 
   // Tumult
-  Spells = new Array();
+  Spells = [];
   Spells[1] = new SpellInfo("3% Chance to be Used, 360 Arc of Attack, 3 Target Maximum, 18 Bleeding Damage over 5 Seconds, 1 Seconds of Stun")
   Spells[2] = new SpellInfo("4% Chance to be Used, 360 Arc of Attack, 3 Target Maximum, 36 Bleeding Damage over 5 Seconds, 1 Seconds of Stun")
   Spells[3] = new SpellInfo("6% Chance to be Used, 360 Arc of Attack, 3 Target Maximum, 48 Bleeding Damage over 5 Seconds, 1 Seconds of Stun")
@@ -287,7 +286,7 @@ function loadWarfare() {
   Skills[17] = new Skill("Tumult", 32, Spells, 3, "A Dual Wield technique that hits up to 3 adjacent enemies.")
 
   // Ardor
-  Spells = new Array();
+  Spells = [];
   Spells[1] = new SpellInfo("+6% Movement, +6% Attack Speed")
   Spells[2] = new SpellInfo("+8% Movement, +8% Attack Speed")
   Spells[3] = new SpellInfo("+10% Movement, +10% Attack Speed")
@@ -297,7 +296,7 @@ function loadWarfare() {
   Skills[18] = new Skill("Ardor", 32, Spells, 2, "You build momentum as you drive your attack forward, attacking and moving more rapidly.")
 
   // Ancestral Horn
-  Spells = new Array();
+  Spells = [];
   Spells[1] = new SpellInfo("225 Energy Cost, 3 Summon Limit, Ancestral Warrior Attributes: Life Time 24 Seconds, 250 Health, 300 Energy, Ancestral Warrior Abilities: 47-53 (Physical)Damage")
   Spells[2] = new SpellInfo("225 Energy Cost, 3 Summon Limit, Ancestral Warrior Attributes: Life Time 24 Seconds, 300 Health, 300 Energy, Ancestral Warrior Abilities: 52-61 (Physical)Damage")
   Spells[3] = new SpellInfo("225 Energy Cost, 3 Summon Limit, Ancestral Warrior Attributes: Life Time 24 Seconds, 350 Health, 300 Energy, Ancestral Warrior Abilities: 57-68 (Physical)Damage")

@@ -33,7 +33,7 @@ function loadRogue() {
   if (!AttributesBase[0]) { // base att's are only set one time
     AttributesBase[0] = new Attribute(300, 300, 50, 50, 50) // base stats for characters
   }
-  Attributes = new Array();
+  let Attributes = [];
   Attributes[1] = new Attribute(35, 0, 2, 2, 0)
   Attributes[2] = new Attribute(70, 0, 3, 5, 0)
   Attributes[3] = new Attribute(105, 0, 5, 7, 0)
@@ -68,12 +68,11 @@ function loadRogue() {
   Attributes[32] = new Attribute(1120, 0, 56, 80, 0)
 
 
-
-  Skills = new Array();
+  let Skills = [];
 
 
   // Calculated Strike
-  Spells = new Array();
+  let Spells = [];
   Spells[1] = new SpellInfo("3 Charge Levels, +45% Damage, 35 Piercing Damage")
   Spells[2] = new SpellInfo("3 Charge Levels, +60% Damage, 45 Piercing Damage")
   Spells[3] = new SpellInfo("3 Charge Levels, +75% Damage, 53 Piercing Damage")
@@ -85,7 +84,7 @@ function loadRogue() {
   Skills[0] = new Skill("Calculated Strike", 1, Spells, -1, "Used in place of your normal attack, every fourth hit with calculated strike will deliver increased damage.")
 
   // Blade Honing
-  Spells = new Array();
+  Spells = [];
   Spells[1] = new SpellInfo("16.0 Meter Radius, +16% Piercing, 3 Piercing Damage, +50 Energy Reserved")
   Spells[2] = new SpellInfo("16.0 Meter Radius, +24% Piercing, 5 Piercing Damage, +50 Energy Reserved")
   Spells[3] = new SpellInfo("16.0 Meter Radius, +32% Piercing, 7 Piercing Damage, +50 Energy Reserved")
@@ -95,7 +94,7 @@ function loadRogue() {
   Skills[1] = new Skill("Blade Honing", 1, Spells, -1, "While active, this skill ensures that the blades on the swords or spears of yourself and allies will remain razor sharp and inflict increased piercing damage.")
 
   // Envenom Weapon
-  Spells = new Array();
+  Spells = [];
   Spells[1] = new SpellInfo("1 Active Energy Cost/Second, 22 Poison Damage Over 6 Seconds, +50 Energy Reserved")
   Spells[2] = new SpellInfo("1 Active Energy Cost/Second, 29 Poison Damage Over 6 Seconds, +50 Energy Reserved")
   Spells[3] = new SpellInfo("1 Active Energy Cost/Second, 35 Poison Damage Over 6 Seconds, +50 Energy Reserved")
@@ -111,7 +110,7 @@ function loadRogue() {
   Skills[2] = new Skill("Envenom Weapon", 1, Spells, -1, "Coats your weapon with deadly poison while activated.")
 
   // Throwing Knife
-  Spells = new Array();
+  Spells = [];
   Spells[1] = new SpellInfo("18 Energy Cost, 1 Projectile, 100% Chance to Pass Through Enemies, 48 Bleeding Damage Over 3 Seconds, 15 Piercing Damage")
   Spells[2] = new SpellInfo("19 Energy Cost, 1 Projectile, 100% Chance to Pass Through Enemies, 63 Bleeding Damage Over 3 Seconds, 18 Piercing Damage")
   Spells[3] = new SpellInfo("20 Energy Cost, 1 Projectile, 100% Chance to Pass Through Enemies, 78 Bleeding Damage Over 3 Seconds, 21 Piercing Damage")
@@ -127,7 +126,7 @@ function loadRogue() {
   Skills[3] = new Skill("Throwing Knife", 4, Spells, -1, "Throw a piercing blade at your opponent capable of causing prolonged bleeding.")
 
   // Disarm Traps
-  Spells = new Array();
+  Spells = [];
   Spells[1] = new SpellInfo("+50% Damage to Devices, +10% Less Damage from Devices")
   Spells[2] = new SpellInfo("+80% Damage to Devices, +20% Less Damage from Devices")
   Spells[3] = new SpellInfo("+110% Damage to Devices, +30% Less Damage from Devices")
@@ -137,7 +136,7 @@ function loadRogue() {
   Skills[4] = new Skill("Disarm Traps", 4, Spells, -1, "Expertise with traps and magical devices allows the Rogue to easily disable them and avoid their damage.")
 
   // Nightshade
-  Spells = new Array();
+  Spells = [];
   Spells[1] = new SpellInfo("+15% Poison Damage, 10% Slowed for 5 Seconds")
   Spells[2] = new SpellInfo("+20% Poison Damage, 14% Slowed for 5 Seconds")
   Spells[3] = new SpellInfo("+25% Poison Damage, 18% Slowed for 5 Seconds")
@@ -149,7 +148,7 @@ function loadRogue() {
   Skills[5] = new Skill("Nightshade", 4, Spells, 2, "Oils harvested from deadly Nightshade plants give your Envenomed Weapons the ability to slow enemies.")
 
   // Flash Powder
-  Spells = new Array();
+  Spells = [];
   Spells[1] = new SpellInfo("53 Energy Cost, 3.8 Meter Radius, 30% Chance to Fumble Attacks for 8 Seconds, 30% Chance of 3-8 Seconds of Confusion")
   Spells[2] = new SpellInfo("56 Energy Cost, 4.4 Meter Radius, 35% Chance to Fumble Attacks for 8 Seconds, 35% Chance of 3-8 Seconds of Confusion")
   Spells[3] = new SpellInfo("59 Energy Cost, 5.0 Meter Radius, 40% Chance to Fumble Attacks for 8 Seconds, 40% Chance of 3-8 Seconds of Confusion")
@@ -161,7 +160,7 @@ function loadRogue() {
   Skills[6] = new Skill("Flash Powder", 4, Spells, -1, "A magician's trick turned to more nefarious purposes, flash powder blinds adjacent enemies impairing their ability to hit with weapons and potentially disorienting them.")
 
   // Lucky Hit
-  Spells = new Array();
+  Spells = [];
   Spells[1] = new SpellInfo("33% Chance for one of the following: 39 (Physical)Damage, +50% Pierce Damage, 60 Bleeding Damage Over 3 Seconds")
   Spells[2] = new SpellInfo("33% Chance for one of the following: 48 (Physical)Damage, +59% Pierce Damage, 75 Bleeding Damage Over 3 Seconds")
   Spells[3] = new SpellInfo("33% Chance for one of the following: 57 (Physical)Damage, +68% Pierce Damage, 90 Bleeding Damage Over 3 Seconds")
@@ -171,7 +170,7 @@ function loadRogue() {
   Skills[7] = new Skill("Lucky Hit", 10, Spells, 0, "Uncommonly good fortune provides a chance that calculated strikes will slip past enemy armor causing tremendous damage.")
 
   // Open Wound
-  Spells = new Array();
+  Spells = [];
   Spells[1] = new SpellInfo("33% Chance of 27 Bleeding Damage Over 3 Seconds")
   Spells[2] = new SpellInfo("33% Chance of 36 Bleeding Damage Over 3 Seconds")
   Spells[3] = new SpellInfo("33% Chance of 45 Bleeding Damage Over 3 Seconds")
@@ -187,7 +186,7 @@ function loadRogue() {
   Skills[8] = new Skill("Open Wound", 10, Spells, -1, "Adds a chance that weapon attacks will inflict bleeding damage when using a sword, spear, bow, or axe.")
 
   // Lay Trap
-  Spells = new Array();
+  Spells = [];
   Spells[1] = new SpellInfo("25 Energy Cost, 1.0 Meter Radius, 3 Summon Limit, Bolt Trap Attributes: Life Time 30 Seconds, 52 Health, Bolt Trap Abilities: Lay Trap (1 Projectile, 8-15 Piercing Damage)")
   Spells[2] = new SpellInfo("27 Energy Cost, 1.0 Meter Radius, 3 Summon Limit, Bolt Trap Attributes: Life Time 30 Seconds, 66 Health, Bolt Trap Abilities: Lay Trap (1 Projectile, 11-19 Piercing Damage)")
   Spells[3] = new SpellInfo("29 Energy Cost, 1.0 Meter Radius, 3 Summon Limit, Bolt Trap Attributes: Life Time 30 Seconds, 80 Health, Bolt Trap Abilities: Lay Trap (1 Projectile, 14-24 Piercing Damage)")
@@ -207,7 +206,7 @@ function loadRogue() {
   Skills[9] = new Skill("Lay Trap", 10, Spells, -1, "Drops a mechanical bolt trap that will trip when enemies draw near and rapidly fire out deadly bolts.")
 
   // Poison Gas Bomb
-  Spells = new Array();
+  Spells = [];
   Spells[1] = new SpellInfo("45 Energy Cost, 3.2 Meter Radius, 98 Poison Damage Over 6 Seconds, 33% Slowed for 6 Seconds")
   Spells[2] = new SpellInfo("47 Energy Cost, 3.4 Meter Radius, 108 Poison Damage Over 6 Seconds, 33% Slowed for 6 Seconds")
   Spells[3] = new SpellInfo("49 Energy Cost, 3.6 Meter Radius, 119 Poison Damage Over 6 Seconds, 33% Slowed for 6 Seconds")
@@ -223,7 +222,7 @@ function loadRogue() {
   Skills[10] = new Skill("Poison Gas Bomb", 10, Spells, -1, "Lobs a bomb that will burst on impact releasing a cloud of toxic gas that damages enemies who breathe it. Side effects may include confusion, panic, and impaired aim with ranged weapons.")
 
   // Lethal Strike
-  Spells = new Array();
+  Spells = [];
   Spells[1] = new SpellInfo("52 Energy Cost, +225% Damage, +225% Pierce Damage")
   Spells[2] = new SpellInfo("53 Energy Cost, +250% Damage, +240% Pierce Damage")
   Spells[3] = new SpellInfo("55 Energy Cost, +275% Damage, +255% Pierce Damage")
@@ -239,7 +238,7 @@ function loadRogue() {
   Skills[11] = new Skill("Lethal Strike", 16, Spells, -1, "A single deadly hit that multiplies the damage of a normal weapon attack.")
 
   // Rapid Construction
-  Spells = new Array();
+  Spells = [];
   Spells[1] = new SpellInfo("-18% Recharge, -5% Energy Cost")
   Spells[2] = new SpellInfo("-27% Recharge, -10% Energy Cost")
   Spells[3] = new SpellInfo("-36% Recharge, -15% Energy Cost")
@@ -251,7 +250,7 @@ function loadRogue() {
   Skills[12] = new Skill("Rapid Construction", 16, Spells, 9, "Expertise in assembling traps reduces the amount of time it takes to create a new trap after one has been set.")
 
   // Toxin Distillation
-  Spells = new Array();
+  Spells = [];
   Spells[1] = new SpellInfo("+12% Poison Damage with +10% Improved Duration")
   Spells[2] = new SpellInfo("+24% Poison Damage with +16% Improved Duration")
   Spells[3] = new SpellInfo("+36% Poison Damage with +22% Improved Duration")
@@ -267,7 +266,7 @@ function loadRogue() {
   Skills[13] = new Skill("Toxin Distillation", 16, Spells, 2, "Learn alchemical processes to distill natural toxins, increasing the potency and duration of all poison attacks.")
 
   // Anatomy
-  Spells = new Array();
+  Spells = [];
   Spells[1] = new SpellInfo("+36% Bleeding Damage")
   Spells[2] = new SpellInfo("+48% Bleeding Damage")
   Spells[3] = new SpellInfo("+60% Bleeding Damage")
@@ -279,7 +278,7 @@ function loadRogue() {
   Skills[14] = new Skill("Anatomy", 24, Spells, -1, "With a deep knowledge of anatomy, attacks can be directed at vital points in the body increasing the chance and effectiveness of bleed damage.")
 
   // Mandrake
-  Spells = new Array();
+  Spells = [];
   Spells[1] = new SpellInfo("1 Active Energy Cost/Second, 15% Chance to Fumble Attacks for 3 Seconds, 12% Chance of 1.8-2.4 Seconds of Confusion")
   Spells[2] = new SpellInfo("1 Active Energy Cost/Second, 20% Chance to Fumble Attacks for 3 Seconds, 16% Chance of 1.8-2.8 Seconds of Confusion")
   Spells[3] = new SpellInfo("1 Active Energy Cost/Second, 25% Chance to Fumble Attacks for 3 Seconds, 20% Chance of 1.8-3.2 Seconds of Confusion")
@@ -291,7 +290,7 @@ function loadRogue() {
   Skills[15] = new Skill("Mandrake", 24, Spells, 2, "Adds a chance for poison to cloud an enemy's mind, sending them into a state of confusion.")
 
   // Shrapnel
-  Spells = new Array();
+  Spells = [];
   Spells[1] = new SpellInfo("5 Energy Cost, 1.5 Meter Radius, 9-11 Projectiles, 55 Bleeding Damage Over 5 Seconds, 24 Piercing Damage")
   Spells[2] = new SpellInfo("6 Energy Cost, 1.5 Meter Radius, 9-11 Projectiles, 65 Bleeding Damage Over 5 Seconds, 32 Piercing Damage")
   Spells[3] = new SpellInfo("7 Energy Cost, 1.5 Meter Radius, 9-11 Projectiles, 75 Bleeding Damage Over 5 Seconds, 40 Piercing Damage")
@@ -307,7 +306,7 @@ function loadRogue() {
   Skills[16] = new Skill("Shrapnel", 24, Spells, 10, "Packed with volatile liquid and metal scraps, the Poison Gas Bomb will explode violently on impact showering the area with deadly Shrapnel.")
 
   // Mortal Wound
-  Spells = new Array();
+  Spells = [];
   Spells[1] = new SpellInfo("15 Energy Cost, +60% Bleeding Damage, +60% Poison Damage, 3 Seconds of Stun")
   Spells[2] = new SpellInfo("15 Energy Cost, +95% Bleeding Damage, +95% Poison Damage, 3 Seconds of Stun")
   Spells[3] = new SpellInfo("15 Energy Cost, +130% Bleeding Damage, +130% Poison Damage, 3 Seconds of Stun")
@@ -319,7 +318,7 @@ function loadRogue() {
   Skills[17] = new Skill("Mortal Wound", 32, Spells, 11, "Stuns victims of Lethal Strike and greatly magnifies the impact of poison and bleeding damage caused by the attack.")
 
   // Flurry of Knives
-  Spells = new Array();
+  Spells = [];
   Spells[1] = new SpellInfo("5 Energy Cost, 1 Projectile, +51% Pierce Damage")
   Spells[2] = new SpellInfo("6 Energy Cost, 2 Projectiles, +60% Pierce Damage")
   Spells[3] = new SpellInfo("6 Energy Cost, 2 Projectiles, +69% Pierce Damage")
@@ -329,7 +328,7 @@ function loadRogue() {
   Skills[18] = new Skill("Flurry of Knives", 32, Spells, 3, "Learn to throw additional knives at once and cut down enemies with a lethal flurry of razor-sharp metal.")
 
   // Improved Firing Mechanism
-  Spells = new Array();
+  Spells = [];
   Spells[1] = new SpellInfo("3 Projectiles, 10% Chance to Pass Through Enemies, +15% Pierce Damage, +30 Health")
   Spells[2] = new SpellInfo("4 Projectiles, 15% Chance to Pass Through Enemies, +20% Pierce Damage, +35 Health")
   Spells[3] = new SpellInfo("4 Projectiles, 20% Chance to Pass Through Enemies, +25% Pierce Damage, +40 Health")

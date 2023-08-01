@@ -2,11 +2,11 @@
 	font-size: 10pt;
 	color: White;
 	font-weight: bold;
-	font-family: Times New Roman;
+	font-family: "Times New Roman", Times, Serif;
 }
 
 #pointsremaining {
-	font-family: Arial;
+	font-family: Arial, SansSerif;
 	font-size: 7pt;
 	color: White;
 	text-align: center;
@@ -104,15 +104,14 @@
 
 #spells {
 	color: White;
-	width: 80%;
 	font-size: 7pt;
-	font-family: MS Reference Sans Serif, Arial;
+	font-family: SansSerif, Arial;
 	width: 95%;
 	padding: 10px;
 }
 
 #pageheader {
-	font-family: Arial;
+	font-family: Arial, SansSerif;
 	font-weight: bolder;
 	font-size: 15pt;
 	color: White;
@@ -121,18 +120,18 @@
 #spelldesc {
 	font-size: 8pt;
 	color: White;
-	font-family: Times New Roman;
+    font-family: "Times New Roman", Times, Serif;
 }
 
 #currentspell {
 	font-size: 8pt;
-	font-family: Times New Roman;
+    font-family: "Times New Roman", Times, Serif;
 	color: #FFFFFF;
 }
 
 #nextspell {
 	font-size: 8pt;
-	font-family: Times New Roman;
+    font-family: "Times New Roman", Times, Serif;
 	color: #A09D98;
 }
 
@@ -140,12 +139,12 @@
 	font-size: 10pt;
 	color: White;
 	font-weight: bold;
-	font-family: Arial;
+	font-family: Arial, SansSerif;
 }
 
 #currentranklevel {
 	font-size: 8pt;
-	font-family: Times New Roman;
+    font-family: "Times New Roman", Times, Serif;
 	color: #ECE89F;
 }
 
@@ -163,12 +162,12 @@
 #prereq {
 	color: green;
 	font-size: 8pt;
-	font-family: Times New Roman;
+    font-family: "Times New Roman", Times, Serif;
 }
 
 #nextranklevel {
 	font-size: 8pt;
-	font-family: Times New Roman;
+    font-family: "Times New Roman", Times, Serif;
 	color: #ECE89F;
 }
 

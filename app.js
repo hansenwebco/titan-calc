@@ -1,13 +1,13 @@
-var express = require('express')
-var app = express();
-var url = require('url');
+const express = require('express');
+const app = express();
+const url = require('url');
 
 app.set('port', (process.env.PORT || 80))
 
 app.use(express.static(__dirname + '/public'))
 
 app.get('/TitanCalc.asp', function(request, response) {
-  response.redirect(301, 'http://www.titancalc.com/TitanCalc.html' + url.parse(request.url,true).search)
+    response.redirect(301, 'https://www.titancalc.com/TitanCalc.html' + url.parse(request.url, true).search)
 })
 
 

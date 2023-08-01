@@ -33,7 +33,7 @@ function loadDefense() {
   if (!AttributesBase[0]) { // base att's are only set one time
     AttributesBase[0] = new Attribute(300, 300, 50, 50, 50) // base stats for characters
   }
-  Attributes = new Array();
+  let Attributes = [];
   Attributes[1] = new Attribute(50, 0, 1, 2, 0)
   Attributes[2] = new Attribute(100, 0, 3, 4, 0)
   Attributes[3] = new Attribute(150, 0, 4, 6, 0)
@@ -68,10 +68,10 @@ function loadDefense() {
   Attributes[32] = new Attribute(1600, 0, 51, 64, 0)
 
 
-  Skills = new Array();
+  let Skills = [];
 
   // Concussive Blow
-  Spells = new Array();
+  let Spells = [];
   Spells[1] = new SpellInfo("+10% Stun Damage, 5% Chance of 1.0 Second of Stun")
   Spells[2] = new SpellInfo("+15% Stun Damage, 5% Chance of 1.5 Seconds of Stun")
   Spells[3] = new SpellInfo("+20% Stun Damage, 5% Chance of 2.0 Seconds of Stun")
@@ -83,7 +83,7 @@ function loadDefense() {
   Skills[0] = new Skill("Concussive Blow", 1, Spells, -1, "Adds a chance for attacks to stun enemies and increases the duration of stun attacks when wielding a club type weapon.")
 
   // Battle Awareness
-  Spells = new Array();
+  Spells = [];
   Spells[1] = new SpellInfo("5.0 Meter Radius, +10 Defensive Ability, +75 Energy Reserved, 4 Armor")
   Spells[2] = new SpellInfo("6.0 Meter Radius, +16 Defensive Ability, +75 Energy Reserved, 6 Armor")
   Spells[3] = new SpellInfo("7.0 Meter Radius, +22 Defensive Ability, +75 Energy Reserved, 8 Armor")
@@ -99,7 +99,7 @@ function loadDefense() {
   Skills[1] = new Skill("Battle Awareness", 1, Spells, -1, "Enter a state of heightened awareness that allows you and your nearby allies to perceive and respond to attacks more effectively.")
 
   // Batter
-  Spells = new Array();
+  Spells = [];
   Spells[1] = new SpellInfo("12 Energy Cost, 3 Damage, +5% Damage, 18% Slower Attack for 8 Seconds")
   Spells[2] = new SpellInfo("13 Energy Cost, 5 Damage, +6% Damage, 20% Slower Attack for 8 Seconds")
   Spells[3] = new SpellInfo("15 Energy Cost, 7 Damage, +7% Damage, 23% Slower Attack for 8 Seconds")
@@ -115,7 +115,7 @@ function loadDefense() {
   Skills[2] = new Skill("Batter", 1, Spells, -1, "A shield attack that hits for increased damage and slows enemy's attacks for a duration.")
 
   // Armor Handling
-  Spells = new Array();
+  Spells = [];
   Spells[1] = new SpellInfo("-8% Strength Requirement for Armor, -8% Strength Requirement for Shields, +6% Armor Absorption")
   Spells[2] = new SpellInfo("-10% Strength Requirement for Armor, -10% Strength Requirement for Shields, +8% Armor Absorption")
   Spells[3] = new SpellInfo("-13% Strength Requirement for Armor, -13% Strength Requirement for Shields, +10% Armor Absorption")
@@ -125,7 +125,7 @@ function loadDefense() {
   Skills[3] = new Skill("Armor Handling", 1, Spells, -1, "Understanding how to properly adjust and move in armor allows you to wear heavier armor and shields than an untrained warrior of equivalent strength could manage.")
 
   // Adrenaline
-  Spells = new Array();
+  Spells = [];
   Spells[1] = new SpellInfo("5% Chance of Activating, 12 Second Duration, +5 Health Regeneration/Second")
   Spells[2] = new SpellInfo("5% Chance of Activating, 12 Second Duration, +8 Health Regeneration/Second")
   Spells[3] = new SpellInfo("5% Chance of Activating, 12 Second Duration, +11 Health Regeneration/Second")
@@ -141,7 +141,7 @@ function loadDefense() {
   Skills[4] = new Skill("Adrenaline", 4, Spells, -1, "Each enemy hit has a chance of triggering an adrenaline rush that boosts life regeneration.")
 
   // Rally
-  Spells = new Array();
+  Spells = [];
   Spells[1] = new SpellInfo("51 Energy Cost, +180 Health Restored, 10 Second Duration, 10.0 Meter Radius, +150% Health Regeneration, 5 Armor")
   Spells[2] = new SpellInfo("53 Energy Cost, +270 Health Restored, 10 Second Duration, 10.0 Meter Radius, +150% Health Regeneration, 8 Armor")
   Spells[3] = new SpellInfo("56 Energy Cost, +370 Health Restored, 10 Second Duration, 10.0 Meter Radius, +150% Health Regeneration, 10 Armor")
@@ -157,7 +157,7 @@ function loadDefense() {
   Skills[5] = new Skill("Rally", 4, Spells, -1, "The resolute call of your horn can turn the tide of battle, inspiring all in its range to fight with renewed vitality.")
 
   // Quick Recovery
-  Spells = new Array();
+  Spells = [];
   Spells[1] = new SpellInfo("50 Energy Cost, 18 Second Duration, -32% Shield Recovery Time, +10% Armor Absorption, +4% Shield Block")
   Spells[2] = new SpellInfo("50 Energy Cost, 20 Second Duration, -42% Shield Recovery Time, +10% Armor Absorption, +6% Shield Block")
   Spells[3] = new SpellInfo("50 Energy Cost, 22 Second Duration, -50% Shield Recovery Time, +10% Armor Absorption, +8% Shield Block")
@@ -169,7 +169,7 @@ function loadDefense() {
   Skills[6] = new Skill("Quick Recovery", 4, Spells, -1, "A strong shield arm allows you to block multiple attackers with amazing speed when necessary, but it can only be kept up for a short time.")
 
   // Shield Smash
-  Spells = new Array();
+  Spells = [];
   Spells[1] = new SpellInfo("6% Chance of Activating, 33 Reduced Defense Ability for 3 Seconds")
   Spells[2] = new SpellInfo("8% Chance of Activating, 51 Reduced Defense Ability for 3 Seconds")
   Spells[3] = new SpellInfo("10% Chance of Activating, 69 Reduced Defense Ability for 3 Seconds")
@@ -179,7 +179,7 @@ function loadDefense() {
   Skills[7] = new Skill("Shield Smash", 4, Spells, -1, "A shield fighting technique that inflicts damage with both the weapon and the shield.")
 
   // Resilience
-  Spells = new Array();
+  Spells = [];
   Spells[1] = new SpellInfo("-30% Recharge")
   Spells[2] = new SpellInfo("-38% Recharge")
   Spells[3] = new SpellInfo("-46% Recharge")
@@ -189,7 +189,7 @@ function loadDefense() {
   Skills[8] = new Skill("Resilience", 10, Spells, 4, "Increases how often an Adrenaline rush can be triggered.")
 
   // Focus
-  Spells = new Array();
+  Spells = [];
   Spells[1] = new SpellInfo("+15 Energy Reserved, +5% Shield Block")
   Spells[2] = new SpellInfo("+15 Energy Reserved, +8% Shield Block")
   Spells[3] = new SpellInfo("+15 Energy Reserved, +10% Shield Block")
@@ -199,7 +199,7 @@ function loadDefense() {
   Skills[9] = new Skill("Focus", 10, Spells, 1, "Focus allows you and your allies to react quickly to enemy attacks, increasing the chance of a successful shield block.")
 
   // Shield Charge
-  Spells = new Array();
+  Spells = [];
   Spells[1] = new SpellInfo("30 Energy Cost, 10-15 (Physical)Damage, 1 Second of Stun, +300% Movement")
   Spells[2] = new SpellInfo("33 Energy Cost, 21-30 (Physical)Damage, 1 Second of Stun, +300% Movement")
   Spells[3] = new SpellInfo("36 Energy Cost, 33-45 (Physical)Damage, 1 Second of Stun, +300% Movement")
@@ -215,7 +215,7 @@ function loadDefense() {
   Skills[10] = new Skill("Shield Charge", 10, Spells, -1, "A running attack that slams into the enemy with your shield causing bonus damage and stunning them.")
 
   // Inspiration
-  Spells = new Array();
+  Spells = [];
   Spells[1] = new SpellInfo("1 Second Duration, +2.8 Energy RegenerationSecond , +10% Total Speed")
   Spells[2] = new SpellInfo("3 Second Duration, +3.6 Energy RegenerationSecond , +10% Total Speed")
   Spells[3] = new SpellInfo("5 Second Duration, +4.4 Energy RegenerationSecond , +10% Total Speed")
@@ -225,7 +225,7 @@ function loadDefense() {
   Skills[11] = new Skill("Inspiration", 16, Spells, 5, "Gradually restores lost energy to allies allowing them to continue the fight.")
 
   // Rend Armor
-  Spells = new Array();
+  Spells = [];
   Spells[1] = new SpellInfo("15 Energy Cost, 90 Arc of Attack, 3 Target Maximum, 6 Reduced Armor for 5 Seconds")
   Spells[2] = new SpellInfo("15 Energy Cost, 95 Arc of Attack, 3 Target Maximum, 12 Reduced Armor for 5 Seconds")
   Spells[3] = new SpellInfo("15 Energy Cost, 100 Arc of Attack, 3 Target Maximum, 18 Reduced Armor for 5 Seconds")
@@ -242,7 +242,7 @@ function loadDefense() {
   Skills[12] = new Skill("Rend Armor", 16, Spells, 2, "Increases the effectiveness of Batter causing it to hit three targets with enough force to dent their armor.")
 
   // Disable
-  Spells = new Array();
+  Spells = [];
   Spells[1] = new SpellInfo("6% Chance to be Used, 12 (Physical)Damage, 50% Slower Attack for 5 Seconds")
   Spells[2] = new SpellInfo("8% Chance to be Used, 15 (Physical)Damage, 50% Slower Attack for 5 Seconds")
   Spells[3] = new SpellInfo("10% Chance to be Used, 18 (Physical)Damage, 50% Slower Attack for 5 Seconds")
@@ -252,7 +252,7 @@ function loadDefense() {
   Skills[13] = new Skill("Disable", 16, Spells, -1, "A fighting technique that utilizes the shield to crush foes and throw them off-balance.")
 
   // Defensive Reaction
-  Spells = new Array();
+  Spells = [];
   Spells[1] = new SpellInfo("+15% Damage, +4% Total Speed")
   Spells[2] = new SpellInfo("+19% Damage, +6% Total Speed")
   Spells[3] = new SpellInfo("+23% Damage, +8% Total Speed")
@@ -264,7 +264,7 @@ function loadDefense() {
   Skills[14] = new Skill("Defensive Reaction", 24, Spells, 4, "Increases damage and attack speed during an Adrenaline rush.")
 
   // Iron Will
-  Spells = new Array();
+  Spells = [];
   Spells[1] = new SpellInfo("+10 Energy Reserved, 30% Stun Resistance, 30% Reduced Entrapment Duration, 30% Reduced Freeze Duration, 30% Skill Disruption Protection")
   Spells[2] = new SpellInfo("+10 Energy Reserved, 40% Stun Resistance, 40% Reduced Entrapment Duration, 40% Reduced Freeze Duration, 40% Skill Disruption Protection")
   Spells[3] = new SpellInfo("+10 Energy Reserved, 50% Stun Resistance, 50% Reduced Entrapment Duration, 50% Reduced Freeze Duration, 50% Skill Disruption Protection")
@@ -274,7 +274,7 @@ function loadDefense() {
   Skills[15] = new Skill("Iron Will", 24, Spells, 1, "Grants allies the resolve to hold out against great adversity.")
 
   // Disruption
-  Spells = new Array();
+  Spells = [];
   Spells[1] = new SpellInfo("12 Energy Cost, 360 Arc of Attack, 2 Target Maximum, 1.5 Seconds of Skill Disruption")
   Spells[2] = new SpellInfo("14 Energy Cost, 360 Arc of Attack, 2 Target Maximum, 2.0 Seconds of Skill Disruption")
   Spells[3] = new SpellInfo("16 Energy Cost, 360 Arc of Attack, 3 Target Maximum, 2.5 Seconds of Skill Disruption")
@@ -284,7 +284,7 @@ function loadDefense() {
   Skills[16] = new Skill("Disruption", 24, Spells, 10, "Increases the shock effect of Shield Charge, startling adjacent enemies and disrupting skill use for a time.")
 
   // Defiance
-  Spells = new Array();
+  Spells = [];
   Spells[1] = new SpellInfo("8 Energy Cost, 10% Elemental Resistance, 5% Damage Reflected")
   Spells[2] = new SpellInfo("10 Energy Cost, 14% Elemental Resistance, 10% Damage Reflected")
   Spells[3] = new SpellInfo("12 Energy Cost, 17% Elemental Resistance, 15% Damage Reflected")
@@ -300,7 +300,7 @@ function loadDefense() {
   Skills[17] = new Skill("Defiance", 32, Spells, 5, "A percentage of all damage inflicted by enemies will be revisited back upon them for a short duration after using Rally.")
 
   // Colossus Form
-  Spells = new Array();
+  Spells = [];
   Spells[1] = new SpellInfo("30% Damage Absorption, 10 Active Energy Cost/Second, 24 Second Duration, +50% Damage, +30% Strength, +30 Health, -15% Total Speed")
   Spells[2] = new SpellInfo("32% Damage Absorption, 10 Active Energy Cost/Second, 24 Second Duration, +50% Damage, +32% Strength, +32 Health, -15% Total Speed")
   Spells[3] = new SpellInfo("35% Damage Absorption, 10 Active Energy Cost/Second, 24 Second Duration, +50% Damage, +35% Strength, +35 Health, -15% Total Speed")
@@ -312,7 +312,7 @@ function loadDefense() {
   Skills[18] = new Skill("Colossus Form", 32, Spells, -1, "Assume the form of a towering Colossus and lay waste to your enemies.")
 
   // Pulverize
-  Spells = new Array();
+  Spells = [];
   Spells[1] = new SpellInfo("6% Chance to be Used, 120 Arc of Attack, 3 Target Maximum, 9-16 (Physical)Damage, 50 Reduced Offensive Ability for 3 Seconds, 3 Seconds of Skill Disruption")
   Spells[2] = new SpellInfo("8% Chance to be Used, 120 Arc of Attack, 3 Target Maximum, 15-25 (Physical)Damage, 50 Reduced Offensive Ability for 3 Seconds, 3 Seconds of Skill Disruption")
   Spells[3] = new SpellInfo("10% Chance to be Used, 120 Arc of Attack, 3 Target Maximum, 21-34 (Physical)Damage, 50 Reduced Offensive Ability for 3 Seconds, 3 Seconds of Skill Disruption")

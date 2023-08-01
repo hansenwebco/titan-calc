@@ -32,7 +32,7 @@ function loadEarth() {
   if (!AttributesBase[0]) { // base att's are only set one time
     AttributesBase[0] = new Attribute(300, 300, 50, 50, 50) // base stats for characters
   }
-  Attributes = new Array();
+  let Attributes = [];
   Attributes[1] = new Attribute(23, 6, 0, 1, 3)
   Attributes[2] = new Attribute(45, 12, 0, 3, 6)
   Attributes[3] = new Attribute(68, 18, 0, 4, 9)
@@ -67,10 +67,9 @@ function loadEarth() {
   Attributes[32] = new Attribute(720, 192, 0, 48, 90)
 
 
-
-  Skills = new Array();
+  let Skills = [];
   // Earth Enchantment
-  Spells = new Array();
+  let Spells = [];
   Spells[1] = new SpellInfo("1 Active Energy Cost, 6.0 Meter Radius, 5-8 Burn Damage Over 1-3 Seconds, +12% Fire Damage, +75 Energy Reserved")
   Spells[2] = new SpellInfo("1 Active Energy Cost, 6.0 Meter Radius, 5-8 Burn Damage Over 1-3 Seconds, +20% Fire Damage, +75 Energy Reserved")
   Spells[3] = new SpellInfo("1 Active Energy Cost, 6.0 Meter Radius, 5-8 Burn Damage Over 1-3 Seconds, +28% Fire Damage, +75 Energy Reserved")
@@ -89,7 +88,7 @@ function loadEarth() {
   Skills[0] = new Skill("Earth Enchantment", 1, Spells, -1, "	Imbues your weapons and the weapons of nearby allies with the power of rock and flame.")
 
   // Flame Surge
-  Spells = new Array();
+  Spells = [];
   Spells[1] = new SpellInfo("37 Energy Cost, 3 Projectiles, 8-15 Fire Damage")
   Spells[2] = new SpellInfo("40 Energy Cost, 3 Projectiles, 11-18 Fire Damage")
   Spells[3] = new SpellInfo("43 Energy Cost, 3 Projectiles, 13-22 Fire Damage")
@@ -105,7 +104,7 @@ function loadEarth() {
   Skills[1] = new Skill("Flame Surge", 1, Spells, -1, "Three jets of flame erupt from the caster's hands incinerating anything in close range.")
 
   // Brimstone
-  Spells = new Array();
+  Spells = [];
   Spells[1] = new SpellInfo("5% (Physical) Damage, 19 Burn Damage over 3 Seconds")
   Spells[2] = new SpellInfo("7% (Physical) Damage, 27 Burn Damage over 3 Seconds")
   Spells[3] = new SpellInfo("9% (Physical) Damage, 36 Burn Damage over 3 Seconds")
@@ -121,7 +120,7 @@ function loadEarth() {
   Skills[2] = new Skill("Brimstone", 4, Spells, 0, "Boosts the physical damage of attacks and provides a chance of causing critical fire damage while under the effects of Earth Enchantment.")
 
   // Heat Shield
-  Spells = new Array();
+  Spells = [];
   Spells[1] = new SpellInfo("112 Damage Absorption, Protects Against: Fire, 45 Energy Cost, 15% Damage Resistance")
   Spells[2] = new SpellInfo("124 Damage Absorption, Protects Against: Fire, 47 Energy Cost, 15% Damage Resistance")
   Spells[3] = new SpellInfo("136 Damage Absorption, Protects Against: Fire, 49 Energy Cost, 15% Damage Resistance")
@@ -137,7 +136,7 @@ function loadEarth() {
   Skills[3] = new Skill("Heat Shield", 4, Spells, -1, "Casts a protective heat shield on the target that absorbs damage caused by fire.")
 
   // Ring of Flame
-  Spells = new Array();
+  Spells = [];
   Spells[1] = new SpellInfo("1 Active Energy Cost/Second, 1.5 Meter Radius, 3 Fire Damage")
   Spells[2] = new SpellInfo("1 Active Energy Cost/Second, 1.8 Meter Radius, 5 Fire Damage")
   Spells[3] = new SpellInfo("1 Active Energy Cost/Second, 2.0 Meter Radius, 7 Fire Damage")
@@ -153,7 +152,7 @@ function loadEarth() {
   Skills[4] = new Skill("Ring of Flame", 4, Spells, -1, "Temporarily encircles you in a searing ring of flames that will burn nearby enemies.")
 
   // Volcanic Orb
-  Spells = new Array();
+  Spells = [];
   Spells[1] = new SpellInfo("64 Energy Cost, 2.5 Meter Radius, 18 Damage, 25-54 Fire Damage")
   Spells[2] = new SpellInfo("68 Energy Cost, 2.5 Meter Radius, 21 Damage, 31-60 Fire Damage")
   Spells[3] = new SpellInfo("72 Energy Cost, 2.5 Meter Radius, 25 Damage, 37-68 Fire Damage")
@@ -169,7 +168,7 @@ function loadEarth() {
   Skills[5] = new Skill("Volcanic Orb", 4, Spells, -1, "Lobs a burning orb of fiery brimstone that explodes when it hits the ground inflicting fire and physical damage to enemies in a small radius.")
 
   // Stone Form
-  Spells = new Array();
+  Spells = [];
   Spells[1] = new SpellInfo("100% Damage Absorption, 64 Energy Cost, 6 Second Duration, +24 Health Regeneration/Second")
   Spells[2] = new SpellInfo("100% Damage Absorption, 68 Energy Cost, 6 Second Duration, +28 Health Regeneration/Second")
   Spells[3] = new SpellInfo("100% Damage Absorption, 72 Energy Cost, 6 Second Duration, +32 Health Regeneration/Second")
@@ -185,7 +184,7 @@ function loadEarth() {
   Skills[6] = new Skill("Stone Form", 10, Spells, -1, "An impervious layer of rock envelops you for a short duration boosting regeneration but prohibiting movement.")
 
   // Summon Core Dweller
-  Spells = new Array();
+  Spells = [];
   Spells[1] = new SpellInfo("250 Energy Cost<br>Core Dweller Summoned Elemental Attributes: 651 Health, 131 Energy<br>Core Dweller Summoned Elemental Ability: 12-21 (Physical)Damage")
   Spells[2] = new SpellInfo("258 Energy Cost<br>Core Dweller Summoned Elemental Attributes: 714 Health, 143 Energy<br>Core Dweller Summoned Elemental Ability: 14-25 (Physical)Damage")
   Spells[3] = new SpellInfo("266 Energy Cost<br>Core Dweller Summoned Elemental Attributes: 781 Health, 154 Energy<br>Core Dweller Summoned Elemental Ability: 17-29 (Physical)Damage")
@@ -205,7 +204,7 @@ function loadEarth() {
   Skills[7] = new Skill("Summon Core Dweller", 10, Spells, -1, "Draws forth a powerful elemental guardian from the Earth's fiery depths.")
 
   // Barrage
-  Spells = new Array();
+  Spells = [];
   Spells[1] = new SpellInfo("45% Chance to Pass Through Enemies, 14 Burn Damage Over 3 Seconds, -30% Recharge")
   Spells[2] = new SpellInfo("50% Chance to Pass Through Enemies, 20 Burn Damage Over 3 Seconds, -40% Recharge")
   Spells[3] = new SpellInfo("55% Chance to Pass Through Enemies, 27 Burn Damage Over 3 Seconds, -50% Recharge")
@@ -217,7 +216,7 @@ function loadEarth() {
   Skills[8] = new Skill("Barrage", 10, Spells, 1, "Reduces the recharge time and energy cost of Flame Surge allowing it to be cast more frequently and efficiently.")
 
   // Stone Skin
-  Spells = new Array();
+  Spells = [];
   Spells[1] = new SpellInfo("3 Armor, 2% Fire Resistance")
   Spells[2] = new SpellInfo("6 Armor, 5% Fire Resistance")
   Spells[3] = new SpellInfo("10 Armor, 7% Fire Resistance")
@@ -231,7 +230,7 @@ function loadEarth() {
   Skills[9] = new Skill("Stone Skin", 16, Spells, 0, "Tempers armor, increasing protection and fire resistance while under the effects of Earth Enchantment.")
 
   // Inner Fire
-  Spells = new Array();
+  Spells = [];
   Spells[1] = new SpellInfo("3 Fire Damage, +15% Dexterity, +24% Health Regeneration, +5% Total Speed")
   Spells[2] = new SpellInfo("5 Fire Damage, +20% Dexterity, +32% Health Regeneration, +6% Total Speed")
   Spells[3] = new SpellInfo("7 Fire Damage, +25% Dexterity, +40% Health Regeneration, +8% Total Speed")
@@ -243,7 +242,7 @@ function loadEarth() {
   Skills[10] = new Skill("Inner Fire", 16, Spells, 7, "Increases the Core Dweller's speed and gives it fire retaliation damage.")
 
   // Soften Metal
-  Spells = new Array();
+  Spells = [];
   Spells[1] = new SpellInfo("1 Active Energy Cost/Second, 3 Damage, 3 Reduced Physical Damage For 3 Seconds, 18 Reduced Armor For 3 Seconds")
   Spells[2] = new SpellInfo("1 Active Energy Cost/Second, 6 Damage, 5 Reduced Physical Damage For 3 Seconds, 24 Reduced Armor For 3 Seconds")
   Spells[3] = new SpellInfo("1 Active Energy Cost/Second, 8 Damage, 6 Reduced Physical Damage For 3 Seconds, 30 Reduced Armor For 3 Seconds")
@@ -252,10 +251,10 @@ function loadEarth() {
   Spells[6] = new SpellInfo("1 Active Energy Cost/Second, 16 Damage, 11 Reduced Physical Damage For 3 Seconds, 50 Reduced Armor For 3 Seconds")
   Spells[7] = new SpellInfo("1 Active Energy Cost/Second, 19 Damage, 12 Reduced Physical Damage For 3 Seconds, 58 Reduced Armor For 3 Seconds")
   Spells[8] = new SpellInfo("1 Active Energy Cost/Second, 23 Damage, 15 Reduced Physical Damage For 3 Seconds, 65 Reduced Armor For 3 Seconds")
-  Skills[11] = new Skill("Soften Metal", 16, Spells, 4, "Intense heat from the Ring of Flame softens the metal of enemy armor and weapons decreaing their effectiveness.")
+  Skills[11] = new Skill("Soften Metal", 16, Spells, 4, "Intense heat from the Ring of Flame softens the metal of enemy armor and weapons decreasing their effectiveness.")
 
   // Conflagration
-  Spells = new Array();
+  Spells = [];
   Spells[1] = new SpellInfo("6 Energy Cost, 3.0 Meter Radius, 11 Burn Damage Over 3 Seconds")
   Spells[2] = new SpellInfo("8 Energy Cost, 3.0 Meter Radius, 16 Burn Damage Over 3 Seconds")
   Spells[3] = new SpellInfo("10 Energy Cost, 3.0 Meter Radius, 21 Burn Damage Over 3 Seconds")
@@ -267,7 +266,7 @@ function loadEarth() {
   Skills[12] = new Skill("Conflagration", 16, Spells, 5, "Increases the explosion radius of Volcanic Orb and causes enemies hit by it to catch fire and suffer burn damage.")
 
   // Molten Rock
-  Spells = new Array();
+  Spells = [];
   Spells[1] = new SpellInfo("16 Energy Cost, 2 Second Duration, 6 Fire Retaliation")
   Spells[2] = new SpellInfo("18 Energy Cost, 2 Second Duration, 7 Fire Retaliation")
   Spells[3] = new SpellInfo("20 Energy Cost, 2 Second Duration, 9 Fire Retaliation")
@@ -279,7 +278,7 @@ function loadEarth() {
   Skills[13] = new Skill("Molten Rock", 24, Spells, 6, "Adds retaliation fire damage to Stone Form.")
 
   // Wildfire
-  Spells = new Array();
+  Spells = [];
   Spells[1] = new SpellInfo("49 Energy Cost, 5 Second Duration, 4.0 Meter Radius, 16-25 Fire Damage")
   Spells[2] = new SpellInfo("50 Energy Cost, 5 Second Duration, 4.0 Meter Radius, 20-30 Fire Damage")
   Spells[3] = new SpellInfo("50 Energy Cost, 5 Second Duration, 4.0 Meter Radius, 24-35 Fire Damage")
@@ -295,7 +294,7 @@ function loadEarth() {
   Skills[14] = new Skill("Wildfire", 24, Spells, 10, "Allows the Core Dweller to ignite an area of ground causing severe burn damage to enemies within.")
 
   // Flame Arch
-  Spells = new Array();
+  Spells = [];
   Spells[1] = new SpellInfo("10 Energy Cost, 1 Projectile, +4% Fire Damage")
   Spells[2] = new SpellInfo("11 Energy Cost, 1 Projectile, +8% Fire Damage")
   Spells[3] = new SpellInfo("12 Energy Cost, 1 Projectile, +12% Fire Damage")
@@ -311,7 +310,7 @@ function loadEarth() {
   Skills[15] = new Skill("Flame Arch", 24, Spells, 1, "Increases the damage and number of flame jets created by Flame Surge.")
 
   // Fragmentation
-  Spells = new Array();
+  Spells = [];
   Spells[1] = new SpellInfo("10 Energy Cost, 3.0 Meter Radius, 3-5 Fragments, 35 Damage, 12 Fire Damage, 1.5 Seconds of Stun")
   Spells[2] = new SpellInfo("11 Energy Cost, 3.0 Meter Radius, 4-6 Fragments, 43 Damage, 16 Fire Damage, 1.5 Seconds of Stun")
   Spells[3] = new SpellInfo("13 Energy Cost, 3.0 Meter Radius, 4-7 Fragments, 51 Damage, 20 Fire Damage, 1.5 Seconds of Stun")
@@ -326,8 +325,8 @@ function loadEarth() {
   Spells[12] = new SpellInfo("26 Energy Cost, 3.0 Meter Radius, 7-13 Fragments, 126 Damage, 59 Fire Damage, 1.5 Seconds of Stun")
   Skills[16] = new Skill("Fragmentation", 24, Spells, 5, "Causes the Volcanic Orb to violently explode on impact sending out fragments of rock that inflict physical damage to enemies in their path.")
 
-  // Volativity
-  Spells = new Array();
+  // Volatility
+  Spells = [];
   Spells[1] = new SpellInfo("33% Chance of +75% Fire Damage")
   Spells[2] = new SpellInfo("33% Chance of +83% Fire Damage")
   Spells[3] = new SpellInfo("33% Chance of +92% Fire Damage")
@@ -340,10 +339,10 @@ function loadEarth() {
   Spells[10] = new SpellInfo("33% Chance of +157% Fire Damage")
   Spells[11] = new SpellInfo("33% Chance of +166% Fire Damage")
   Spells[12] = new SpellInfo("33% Chance of +178% Fire Damage")
-  Skills[17] = new Skill("Volativity", 32, Spells, -1, "Enhanced by the volatile energy of the Earth, your fire attacks have a chance of inflicting greatly increased damage.")
+  Skills[17] = new Skill("Volatility", 32, Spells, -1, "Enhanced by the volatile energy of the Earth, your fire attacks have a chance of inflicting greatly increased damage.")
 
   // Metamorphosis
-  Spells = new Array();
+  Spells = [];
   Spells[1] = new SpellInfo("+10% Health, +10% Armor Protection, +33% Armor Absorption, 4% Elemental Resistance")
   Spells[2] = new SpellInfo("+15% Health, +15% Armor Protection, +33% Armor Absorption, 6% Elemental Resistance")
   Spells[3] = new SpellInfo("+20% Health, +20% Armor Protection, +33% Armor Absorption, 8% Elemental Resistance")
@@ -355,7 +354,7 @@ function loadEarth() {
   Skills[18] = new Skill("Metamorphosis", 32, Spells, 14, "Under tremendous heat and pressure, the composition of the Core Dweller hardens making it more resistant to damage.")
 
   // Eruption
-  Spells = new Array();
+  Spells = [];
   Spells[1] = new SpellInfo("95 Energy Cost, 6 Second Duration, 3.0 Meter Radius, 2-3 Fragments, 31 Damage, 28-33 Fire Damage")
   Spells[2] = new SpellInfo("98 Energy Cost, 6 Second Duration, 3.0 Meter Radius, 3-4 Fragments, 38 Damage, 35-41 Fire Damage")
   Spells[3] = new SpellInfo("100 Energy Cost, 6 Second Duration, 3.0 Meter Radius, 3-4 Fragments, 44 Damage, 41-48 Fire Damage")
