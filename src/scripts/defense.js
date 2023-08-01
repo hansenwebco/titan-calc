@@ -68,7 +68,7 @@ function loadDefense() {
   Attributes[32] = new Attribute(1600, 0, 51, 64, 0)
 
 
-  let Skills = [];
+  Skills = [];
 
   // Concussive Blow
   let Spells = [];

@@ -67,9 +67,7 @@ function loadRogue() {
   Attributes[31] = new Attribute(1085, 0, 54, 77, 0)
   Attributes[32] = new Attribute(1120, 0, 56, 80, 0)
 
-
-  let Skills = [];
-
+  Skills = [];
 
   // Calculated Strike
   let Spells = [];

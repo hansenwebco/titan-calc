@@ -66,8 +66,7 @@ function loadSpirit() {
   Attributes[31] = new Attribute(620, 248, 0, 46, 93)
   Attributes[32] = new Attribute(640, 256, 0, 48, 96)
 
-
-  let Skills = [];
+  Skills = [];
 
   // Deathchill Aura
   let Spells = [];

@@ -69,7 +69,7 @@ function loadWarfare() {
   Attributes[32] = new Attribute(1280, 0, 64, 64, 0)
 
 
-  let Skills = [];
+  Skills = [];
 
   // Weapon Training
   let Spells = [];
