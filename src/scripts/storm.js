@@ -32,7 +32,7 @@ function loadStorm() {
   if (!AttributesBase[0]) { // base att's are only set one time
     AttributesBase[0] = new Attribute(300, 300, 50, 50, 50) // base stats for characters
   }
-    let Attributes = [];
+  let Attributes = [];
   Attributes[1] = new Attribute(21, 15, 0, 1, 3)
   Attributes[2] = new Attribute(42, 30, 0, 2, 6)
   Attributes[3] = new Attribute(63, 45, 0, 3, 9)
@@ -67,10 +67,10 @@ function loadStorm() {
   Attributes[32] = new Attribute(672, 480, 0, 32, 96)
 
 
-    let Skills = [];
+  let Skills = [];
 
   // Ice Shard
-    let Spells = [];
+  let Spells = [];
   Spells[1] = new SpellInfo("21 Energy Cost, 1 Projectile, 16-25 Cold Damage, 15% Slowed for 1.5 Seconds")
   Spells[2] = new SpellInfo("23 Energy Cost, 1 Projectile, 20-31 Cold Damage, 15% Slowed for 1.5 Seconds")
   Spells[3] = new SpellInfo("25 Energy Cost, 1 Projectile, 23-36 Cold Damage, 15% Slowed for 1.5 Seconds")
@@ -86,7 +86,7 @@ function loadStorm() {
   Skills[0] = new Skill("Ice Shard", 1, Spells, -1, "Projects a deadly shard of ice at the target inflicting cold damage and temporarily slowing them.")
 
   // Storm Nimbus
-    Spells = [];
+  Spells = [];
   Spells[1] = new SpellInfo("1 Active Energy Cost/Second, +75 Energy Reserved, Chance for One of the Following: 3 Cold Damage, 1-21 Lightning Damage")
   Spells[2] = new SpellInfo("1 Active Energy Cost/Second, +75 Energy Reserved, Chance for One of the Following: 5 Cold Damage, 3-27 Lightning Damage")
   Spells[3] = new SpellInfo("1 Active Energy Cost/Second, +75 Energy Reserved, Chance for One of the Following: 7 Cold Damage, 5-33 Lightning Damage")
@@ -100,7 +100,7 @@ function loadStorm() {
   Skills[1] = new Skill("Storm Nimbus", 1, Spells, -1, "When active, the player is imbued with the power of the storm, causing their attacks to strike with cold and lightning damage.")
 
   // Spell Breaker
-    Spells = [];
+  Spells = [];
   Spells[1] = new SpellInfo("32 Energy Cost, 6.0 Meter Radius, 24% Energy Drained, +50% Damage to Magical, +15 Damage to Magical")
   Spells[2] = new SpellInfo("34 Energy Cost, 6.0 Meter Radius, 32% Energy Drained, +50% Damage to Magical, +30 Damage to Magical")
   Spells[3] = new SpellInfo("36 Energy Cost, 6.0 Meter Radius, 40% Energy Drained, +50% Damage to Magical, +45 Damage to Magical")
@@ -110,7 +110,7 @@ function loadStorm() {
   Skills[2] = new Skill("Spell Breaker", 4, Spells, -1, "A pulse of negatively charged energy dispels hostile enchantments on allies or, when cast on enemies, breaks their beneficial enchantments and negates a portion of their energy.")
 
   // Thunderball
-    Spells = [];
+  Spells = [];
   Spells[1] = new SpellInfo("50 Energy Cost, 1.8 Meter Radius, 7-31 Lightning Damage, 1.5 Seconds of Stun")
   Spells[2] = new SpellInfo("53 Energy Cost, 1.8 Meter Radius, 11-36 Lightning Damage, 1.8 Seconds of Stun")
   Spells[3] = new SpellInfo("56 Energy Cost, 1.8 Meter Radius, 16-40 Lightning Damage, 2.1 Seconds of Stun")
@@ -126,7 +126,7 @@ function loadStorm() {
   Skills[3] = new Skill("Thunderball", 4, Spells, -1, "Hurls a ball of electrical energy that damages and stuns enemies in a small blast radius.")
 
   // Heart of Frost
-    Spells = [];
+  Spells = [];
   Spells[1] = new SpellInfo("+10% Cold Damage, +25 Energy Reserved, 10% Slowed Attack Retaliation for 3 Seconds, 10% Slowed Movement Retaliation for 3 Seconds")
   Spells[2] = new SpellInfo("+16% Cold Damage, +25 Energy Reserved, 15% Slowed Attack Retaliation for 3 Seconds, 15% Slowed Movement Retaliation for 3 Seconds")
   Spells[3] = new SpellInfo("+22% Cold Damage, +25 Energy Reserved, 19% Slowed Attack Retaliation for 3 Seconds, 19% Slowed Movement Retaliation for 3 Seconds")
@@ -138,7 +138,7 @@ function loadStorm() {
   Skills[4] = new Skill("Heart of Frost", 4, Spells, 1, "When Storm Nimbus is active, the air around the player becomes icy cold and slows any attackers within its perimeter.")
 
   // Spell Shock
-    Spells = [];
+  Spells = [];
   Spells[1] = new SpellInfo("14 Energy Cost, 30% Energy Drained Causes Damage, 3.0 Seconds of Skill Disruption")
   Spells[2] = new SpellInfo("16 Energy Cost, 45% Energy Drained Causes Damage, 3.6 Seconds of Skill Disruption")
   Spells[3] = new SpellInfo("18 Energy Cost, 60% Energy Drained Causes Damage, 4.2 Seconds of Skill Disruption")
@@ -150,7 +150,7 @@ function loadStorm() {
   Skills[5] = new Skill("Spell Shock", 10, Spells, 2, "Inflicts energy burn damage and disrupts enemy spell-caster's ability to use skills as their beneficial enchantments are abruptly shattered by Spell Breaker.")
 
   // Velocity
-    Spells = [];
+  Spells = [];
   Spells[1] = new SpellInfo("2 Energy Cost, 18% Chance to Pass Through Enemies, +10% Cold Damage, +15% Increase in Projectile Speed")
   Spells[2] = new SpellInfo("2 Energy Cost, 24% Chance to Pass Through Enemies, +16% Cold Damage, +20% Increase in Projectile Speed")
   Spells[3] = new SpellInfo("3 Energy Cost, 30% Chance to Pass Through Enemies, +22% Cold Damage, +25% Increase in Projectile Speed")
@@ -162,7 +162,7 @@ function loadStorm() {
   Skills[6] = new Skill("Velocity", 10, Spells, 0, "Increases the speed and damage of Ice Shard. Gives each shard a chance to punch through its target and keep going.")
 
   // Squall
-    Spells = [];
+  Spells = [];
   Spells[1] = new SpellInfo("54 Energy Cost, 6 Second Duration, 4.0 Meter Radius, 30% Chance of 3-21 Lightning Damage, 50% Chance of Impaired Aim for 1 Seconds")
   Spells[2] = new SpellInfo("57 Energy Cost, 6 Second Duration, 4.8 Meter Radius, 38% Chance of 7-25 Lightning Damage, 55% Chance of Impaired Aim for 1 Seconds")
   Spells[3] = new SpellInfo("60 Energy Cost, 6 Second Duration, 5.6 Meter Radius, 45% Chance of 11-29 Lightning Damage, 60% Chance of Impaired Aim for 1 Seconds")
@@ -178,7 +178,7 @@ function loadStorm() {
   Skills[7] = new Skill("Squall", 10, Spells, -1, "Creates a wind storm in the target area that decreases the projectile attack accuracy of enemies caught within it.")
 
   // Freezing Blast
-    Spells = [];
+  Spells = [];
   Spells[1] = new SpellInfo("85% Damage Absorption, 63 Energy Cost, 3.0 Second Duration, 1.8 Meter Radius, 3 Cold Damage")
   Spells[2] = new SpellInfo("85% Damage Absorption, 66 Energy Cost, 3.4 Second Duration, 2.1 Meter Radius, 6 Cold Damage")
   Spells[3] = new SpellInfo("85% Damage Absorption, 69 Energy Cost, 3.8 Second Duration, 2.4 Meter Radius, 9 Cold Damage")
@@ -190,7 +190,7 @@ function loadStorm() {
   Skills[8] = new Skill("Freezing Blast", 10, Spells, -1, "Encases enemies in ice immobilizing them but also making them more difficult to damage.")
 
   // Lightning Bolt
-    Spells = [];
+  Spells = [];
   Spells[1] = new SpellInfo("80 Energy Cost, 0.5 Meter Radius, 51-109 Lightning Damage, 1 Second of Stun")
   Spells[2] = new SpellInfo("88 Energy Cost, 0.6 Meter Radius, 63-133 Lightning Damage, 1 Second of Stun")
   Spells[3] = new SpellInfo("96 Energy Cost, 0.7 Meter Radius, 74-156 Lightning Damage, 1 Second of Stun")
@@ -206,7 +206,7 @@ function loadStorm() {
   Skills[9] = new Skill("Lightning Bolt", 16, Spells, -1, "Calls down a powerful bolt of lightning from the heavens to decimate your target.")
 
   // Concussive Blast
-    Spells = [];
+  Spells = [];
   Spells[1] = new SpellInfo("14 Energy Cost, 1.5 Meter Radius, 2-3 Fragments, 3-11 Lightning Damage, 1.0 Seconds of Stun")
   Spells[2] = new SpellInfo("15 Energy Cost, 1.5 Meter Radius, 2-4 Fragments, 6-16 Lightning Damage, 1.2 Seconds of Stun")
   Spells[3] = new SpellInfo("16 Energy Cost, 1.5 Meter Radius, 2-4 Fragments, 9-22 Lightning Damage, 1.5 Seconds of Stun")
@@ -218,7 +218,7 @@ function loadStorm() {
   Skills[10] = new Skill("Concussive Blast", 16, Spells, 3, "Enhances the power of Thunderball, increasing stun damage and blast radius.")
 
   // Obscured Visibility
-    Spells = [];
+  Spells = [];
   Spells[1] = new SpellInfo("6 Energy Cost, 10% Reduced Damage for 6 Seconds, 10% Reduced Resistance for 6 Seconds")
   Spells[2] = new SpellInfo("7 Energy Cost, 14% Reduced Damage for 6 Seconds, 14% Reduced Resistance for 6 Seconds")
   Spells[3] = new SpellInfo("8 Energy Cost, 18% Reduced Damage for 6 Seconds, 18% Reduced Resistance for 6 Seconds")
@@ -228,7 +228,7 @@ function loadStorm() {
   Skills[11] = new Skill("Obscured Visibility", 16, Spells, 7, "Reduces visibility inside the Squall makes it difficult for enemies to effectively attack or defend themselves.")
 
   // Static Charge
-    Spells = [];
+  Spells = [];
   Spells[1] = new SpellInfo("+10% Lightning Damage, +25 Energy Reserved, 15% Chance of 54 Lightning Retaliation")
   Spells[2] = new SpellInfo("+16% Lightning Damage, +25 Energy Reserved, 15% Chance of 66 Lightning Retaliation")
   Spells[3] = new SpellInfo("+22% Lightning Damage, +25 Energy Reserved, 15% Chance of 78 Lightning Retaliation")
@@ -244,7 +244,7 @@ function loadStorm() {
   Skills[12] = new Skill("Static Charge", 16, Spells, 1, "Electrical energy builds inside the player while Storm Nimbus is active and passes through enemy weapons that come in contact, delivering a powerful shock.")
 
   // Energy Shield
-    Spells = [];
+  Spells = [];
   Spells[1] = new SpellInfo("125 Damage Absorption, 60 Energy Cost, Protects Against: Lightning, Cold")
   Spells[2] = new SpellInfo("149 Damage Absorption, 64 Energy Cost, Protects Against: Lightning, Cold")
   Spells[3] = new SpellInfo("174 Damage Absorption, 68 Energy Cost, Protects Against: Lightning, Cold")
@@ -260,7 +260,7 @@ function loadStorm() {
   Skills[13] = new Skill("Energy Shield", 16, Spells, -1, "Creates a shield of energy that will nullify all incoming damage from elemental attacks.")
 
   // Torrent
-    Spells = [];
+  Spells = [];
   Spells[1] = new SpellInfo("14 Energy Cost, 1 Projectile, 21 Frostburn Damage Over 3 Seconds")
   Spells[2] = new SpellInfo("16 Energy Cost, 1 Projectile, 33 Frostburn Damage Over 3 Seconds")
   Spells[3] = new SpellInfo("21 Energy Cost, 2 Projectiles, 39 Frostburn Damage Over 3 Seconds")
@@ -272,7 +272,7 @@ function loadStorm() {
   Skills[14] = new Skill("Torrent", 24, Spells, 0, "Increases the number of shards cast, sending a deadly torrent at enemies.")
 
   // Summon Wisp
-    Spells = [];
+  Spells = [];
   Spells[1] = new SpellInfo("200 Energy Cost, Storm Wisp Attributes: 153 Health, 186 Energy, Storm Wisp Ability 1: Plasma Burn (6-25 Lightning Damage), Storm Wisp Ability 2: Dodge Attack (99% Chance to Dodge Attacks, +99% Chance to Avoid Projectiles)")
   Spells[2] = new SpellInfo("200 Energy Cost, Storm Wisp Attributes: 165 Health, 195 Energy, Storm Wisp Ability 1: Plasma Burn (9-28 Lightning Damage), Storm Wisp Ability 2: Dodge Attack (99% Chance to Dodge Attacks, +99% Chance to Avoid Projectiles)")
   Spells[3] = new SpellInfo("200 Energy Cost, Storm Wisp Attributes: 177 Health, 204 Energy, Storm Wisp Ability 1: Plasma Burn (11-31 Lightning Damage), Storm Wisp Ability 2: Dodge Attack (99% Chance to Dodge Attacks, +99% Chance to Avoid Projectiles)")
@@ -292,7 +292,7 @@ function loadStorm() {
   Skills[15] = new Skill("Summon Wisp", 24, Spells, -1, "Summon an immortal Storm Wisp from the atmosphere to battle your enemies.")
 
   // Storm Surge
-    Spells = [];
+  Spells = [];
   Spells[1] = new SpellInfo("15% Chance of Activating, 5.0 Meter Radius, 25 Cold Damage, 3-43 Lightning Damage, 1.5 Seconds of Stun, +150 Energy Reserved")
   Spells[2] = new SpellInfo("15% Chance of Activating, 5.0 Meter Radius, 30 Cold Damage, 9-50 Lightning Damage, 1.5 Seconds of Stun, +150 Energy Reserved")
   Spells[3] = new SpellInfo("15% Chance of Activating, 5.0 Meter Radius, 36 Cold Damage, 15-57 Lightning Damage, 1.5 Seconds of Stun, +150 Energy Reserved")
@@ -308,7 +308,7 @@ function loadStorm() {
   Skills[16] = new Skill("Storm Surge", 24, Spells, -1, "When activated, each enemy hit has a chance of unleashing a violent squall of storm energy.")
 
   // Chain Lightning
-    Spells = [];
+  Spells = [];
   Spells[1] = new SpellInfo("31-53 Lightning Damage, 0.5 Seconds of Stun")
   Spells[2] = new SpellInfo("41-69 Lightning Damage, 0.5 Seconds of Stun")
   Spells[3] = new SpellInfo("53-84 Lightning Damage, 0.5 Seconds of Stun")
@@ -324,7 +324,7 @@ function loadStorm() {
   Skills[17] = new Skill("Chain Lightning", 32, Spells, 9, "Causes electricity to leap from the target of your Lightning Bolt skill and strike additional nearby enemies.")
 
   // Eye of the Storm
-    Spells = [];
+  Spells = [];
   Spells[1] = new SpellInfo("30 Energy Cost, 30 Second Duration, 14.0 Meter Radius, +30% Elemental Damage, 12% Cold Resistance, 12% Lightning Resistance, Protects Against: Lightning, Cold")
   Spells[2] = new SpellInfo("32 Energy Cost, 30 Second Duration, 14.0 Meter Radius, +40% Elemental Damage, 15% Cold Resistance, 15% Lightning Resistance, Protects Against: Lightning, Cold")
   Spells[3] = new SpellInfo("35 Energy Cost, 30 Second Duration, 14.0 Meter Radius, +50% Elemental Damage, 18% Cold Resistance, 18% Lightning Resistance, Protects Against: Lightning, Cold")
@@ -333,10 +333,10 @@ function loadStorm() {
   Spells[6] = new SpellInfo("42 Energy Cost, 30 Second Duration, 14.0 Meter Radius, +80% Elemental Damage, 27% Cold Resistance, 27% Lightning Resistance, Protects Against: Lightning, Cold")
   Spells[7] = new SpellInfo("44 Energy Cost, 30 Second Duration, 14.0 Meter Radius, +90% Elemental Damage, 33% Cold Resistance, 33% Lightning Resistance, Protects Against: Lightning, Cold")
   Spells[8] = new SpellInfo("46 Energy Cost, 30 Second Duration, 14.0 Meter Radius, +100% Elemental Damage, 33% Cold Resistance, 33% Lightning Resistance, Protects Against: Lightning, Cold")
-    Skills[18] = new Skill("Eye of the Storm", 32, Spells, 15, "A wisp ability that increases the lightning and cold damage of all nearby allies for a duration and provides protection from lightning and cold damage.")
+  Skills[18] = new Skill("Eye of the Storm", 32, Spells, 15, "A wisp ability that increases the lightning and cold damage of all nearby allies for a duration and provides protection from lightning and cold damage.")
 
   // Reflection
-    Spells = [];
+  Spells = [];
   Spells[1] = new SpellInfo("30 Energy Cost, 5% Chance of 25% Damage Reflected")
   Spells[2] = new SpellInfo("30 Energy Cost, 6% Chance of 33% Damage Reflected")
   Spells[3] = new SpellInfo("30 Energy Cost, 7% Chance of 41% Damage Reflected")
