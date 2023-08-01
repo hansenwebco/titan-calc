@@ -67,7 +67,7 @@ function loadStorm() {
   Attributes[32] = new Attribute(672, 480, 0, 32, 96)
 
 
-  let Skills = [];
+  Skills = [];
 
   // Ice Shard
   let Spells = [];

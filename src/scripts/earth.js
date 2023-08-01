@@ -66,8 +66,8 @@ function loadEarth() {
   Attributes[31] = new Attribute(698, 186, 0, 46, 90)
   Attributes[32] = new Attribute(720, 192, 0, 48, 90)
 
+  Skills = [];
 
-  let Skills = [];
   // Earth Enchantment
   let Spells = [];
   Spells[1] = new SpellInfo("1 Active Energy Cost, 6.0 Meter Radius, 5-8 Burn Damage Over 1-3 Seconds, +12% Fire Damage, +75 Energy Reserved")

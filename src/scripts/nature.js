@@ -67,7 +67,8 @@ function loadNature() {
   Attributes[32] = new Attribute(640, 512, 0, 48, 80)
 
 
-  let Skills = [];
+  Skills = [];
+
   // Regrowth
   let Spells = [];
   Spells[1] = new SpellInfo("+240 Health Restored, 46 Energy Cost")

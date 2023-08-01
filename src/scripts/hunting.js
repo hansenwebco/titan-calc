@@ -66,7 +66,7 @@ function loadHunter() {
   Attributes[31] = new Attribute(759, 0, 54, 77, 0)
   Attributes[32] = new Attribute(784, 0, 56, 80, 0)
 
-  let Skills = [];
+  Skills = [];
 
   // Ensnare
   let Spells = [];

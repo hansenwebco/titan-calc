@@ -69,7 +69,7 @@ function loadDream() {
   Attributes[32] = new Attribute(1120, 256, 64, 0, 56)
 
 
-  let Skills = [];
+  Skills = [];
 
   // Sands of Sleep
   let Spells = [];
