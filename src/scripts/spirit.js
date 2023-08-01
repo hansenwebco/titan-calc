@@ -32,7 +32,7 @@ function loadSpirit() {
   if (!AttributesBase[0]) { // base att's are only set one time
     AttributesBase[0] = new Attribute(300, 300, 50, 50, 50) // base stats for characters
   }
-  Attributes = new Array();
+    let Attributes = [];
   Attributes[1] = new Attribute(20, 8, 0, 1, 3)
   Attributes[2] = new Attribute(40, 16, 0, 3, 6)
   Attributes[3] = new Attribute(60, 24, 0, 4, 9)
@@ -67,10 +67,10 @@ function loadSpirit() {
   Attributes[32] = new Attribute(640, 256, 0, 48, 96)
 
 
-  Skills = new Array();
+    let Skills = [];
 
   // Deathchill Aura
-  Spells = new Array();
+    let Spells = [];
   Spells[1] = new SpellInfo("1 Active Energy Cost/Second, 1 Second Duration, 2.5 Meter Radius, 1-3% Reduction to Enemy's Health, -13% Total Speed")
   Spells[2] = new SpellInfo("1 Active Energy Cost/Second, 1 Second Duration, 2.7 Meter Radius, 1-4% Reduction to Enemy's Health, -15% Total Speed")
   Spells[3] = new SpellInfo("1 Active Energy Cost/Second, 1 Second Duration, 3.0 Meter Radius, 2-5% Reduction to Enemy's Health, -17% Total Speed")
@@ -80,7 +80,7 @@ function loadSpirit() {
   Skills[0] = new Skill("Deathchill Aura", 1, Spells, -1, "A deathly chill radiates from the character slowing the attack and movement of enemies as it diminishes their life.")
 
   // Life Drain
-  Spells = new Array();
+    Spells = [];
   Spells[1] = new SpellInfo("54 Energy Cost, 49 Vitality Damage, 150% of Attack Damage Converted to Health")
   Spells[2] = new SpellInfo("58 Energy Cost, 53 Vitality Damage, 160% of Attack Damage Converted to Health")
   Spells[3] = new SpellInfo("64 Energy Cost, 57 Vitality Damage, 170% of Attack Damage Converted to Health")
@@ -96,7 +96,7 @@ function loadSpirit() {
   Skills[1] = new Skill("Life Drain", 1, Spells, -1, "Leeches life from an enemy to replenish your own.")
 
   // Ternion Attack
-  Spells = new Array();
+    Spells = [];
   Spells[1] = new SpellInfo("Launches 3 Projectiles, 30 Energy Cost, -75% Elemental Damage")
   Spells[2] = new SpellInfo("Launches 3 Projectiles, 31 Energy Cost, -70% Elemental Damage")
   Spells[3] = new SpellInfo("Launches 3 Projectiles, 31 Energy Cost, -65% Elemental Damage")
@@ -112,7 +112,7 @@ function loadSpirit() {
   Skills[2] = new Skill("Ternion Attack", 4, Spells, -1, "This powerful wizard's trick allows you to triple the attack of your staff by channeling magical energy into it. Initially each hit is not as powerful as a normal attack but the effectiveness increases every level.")
 
   // Ravages of Time
-  Spells = new Array();
+    Spells = [];
   Spells[1] = new SpellInfo("1 Active Energy Cost/Second, -11% Damage, -11% Pierce Damage, -11% Armor Absorption")
   Spells[2] = new SpellInfo("1 Active Energy Cost/Second, -15% Damage, -15% Pierce Damage, -15% Armor Absorption")
   Spells[3] = new SpellInfo("1 Active Energy Cost/Second, -18% Damage, -18% Pierce Damage, -18% Armor Absorption")
@@ -124,7 +124,7 @@ function loadSpirit() {
   Skills[3] = new Skill("Ravages of Time", 4, Spells, 0, "Accelerates the effects of time on adjacent enemies' equipment causing weapons to dull and armor to crumble.")
 
   // Vision of Death
-  Spells = new Array();
+    Spells = [];
   Spells[1] = new SpellInfo("55 Energy Cost, 3.0 Meter Radius, 3 Reduced Damage for 3 Seconds, 66% Chance to Fumble Attacks for 11 Seconds, 3.0 Seconds of Fear")
   Spells[2] = new SpellInfo("60 Energy Cost, 3.0 Meter Radius, 5 Reduced Damage for 3.6 Seconds, 66% Chance to Fumble Attacks for 11 Seconds, 3.5 Seconds of Fear")
   Spells[3] = new SpellInfo("65 Energy Cost, 3.0 Meter Radius, 7 Reduced Damage for 4.2 Seconds, 66% Chance to Fumble Attacks for 11 Seconds, 4.1 Seconds of Fear")
@@ -134,7 +134,7 @@ function loadSpirit() {
   Skills[4] = new Skill("Vision of Death", 4, Spells, -1, "Assaults the minds of surrounding enemies with images of their own death causing the weak-hearted to flee in horror and more resolute foes to fight less effectively.")
 
   // Spirit Ward
-  Spells = new Array();
+    Spells = [];
   Spells[1] = new SpellInfo("1 Active Energy Cost/Second, 6.0 Meter Radius, +3 Damage to Undead, +15% Less Damage from Undead")
   Spells[2] = new SpellInfo("1 Active Energy Cost/Second, 6.0 Meter Radius, +5 Damage to Undead, +18% Less Damage from Undead")
   Spells[3] = new SpellInfo("1 Active Energy Cost/Second, 6.0 Meter Radius, +7 Damage to Undead, +21% Less Damage from Undead")
@@ -146,7 +146,7 @@ function loadSpirit() {
   Skills[5] = new Skill("Spirit Ward", 4, Spells, -1, "Casts a protective ward that will reduce the damage of undead attacks on the player and nearby allies.")
 
   // Cascade
-  Spells = new Array();
+    Spells = [];
   Spells[1] = new SpellInfo("35 Vitality Damage, 150% of Attack Damage Converted to Health")
   Spells[2] = new SpellInfo("39 Vitality Damage, 160% of Attack Damage Converted to Health")
   Spells[3] = new SpellInfo("44 Vitality Damage, 170% of Attack Damage Converted to Health")
@@ -160,7 +160,7 @@ function loadSpirit() {
   Skills[6] = new Skill("Cascade", 10, Spells, 1, "Causes Life Drain to blast through the primary target and hit multiple enemies.")
 
   // Dark Covenant
-  Spells = new Array();
+    Spells = [];
   Spells[1] = new SpellInfo("18 Active Health Cost/Second, 10 Second Duration, 15.0 Meter Radius, +5 Energy Regeneration/Second, +10% Run Speed")
   Spells[2] = new SpellInfo("18 Active Health Cost/Second, 12 Second Duration, 15.0 Meter Radius, +7 Energy Regeneration/Second, +10% Run Speed")
   Spells[3] = new SpellInfo("18 Active Health Cost/Second, 14 Second Duration, 15.0 Meter Radius, +9 Energy Regeneration/Second, +10% Run Speed")
@@ -170,7 +170,7 @@ function loadSpirit() {
   Skills[7] = new Skill("Dark Covenant", 10, Spells, -1, "Mysterious otherworldly entities offer great power to Spirit Masters who can commune with them. The cost, however, is measured in life.")
 
   // Summon Liche King
-  Spells = new Array();
+    Spells = [];
   Spells[1] = new SpellInfo("250 Energy Cost, Liche King Enslaved Soul Attributes: 370 Health, 307 Energy, Liche King Enslaved Soul Ability: Spectral Bolt (13 Elemental Damage, 3% Reduction to Enemy's Health, 19 Vitality Damage, 15% of Attack Damage Converted to Health)")
   Spells[2] = new SpellInfo("258 Energy Cost, Liche King Enslaved Soul Attributes: 391 Health, 324 Energy, Liche King Enslaved Soul Ability: Spectral Bolt (16 Elemental Damage, 3% Reduction to Enemy's Health, 23 Vitality Damage, 15% of Attack Damage Converted to Health)")
   Spells[3] = new SpellInfo("266 Energy Cost, Liche King Enslaved Soul Attributes: 411 Health, 341 Energy, Liche King Enslaved Soul Ability: Spectral Bolt (20 Elemental Damage, 4% Reduction to Enemy's Health, 27 Vitality Damage, 15% of Attack Damage Converted to Health)")
@@ -190,7 +190,7 @@ function loadSpirit() {
   Skills[8] = new Skill("Summon Liche King", 10, Spells, -1, "In ages past, powerful sorcerers learned how to cheat Hades and persist as undead liches long after death had robbed their bodies of life. A dangerous practice of Theurgists is to bind the souls of these ancient liches to their will, thus acquiring their powers.")
 
   // Spirit Bane
-  Spells = new Array();
+    Spells = [];
   Spells[1] = new SpellInfo("1 Active Energy Cost/Second, +33% Damage to Undead, +9 Damage to Undead")
   Spells[2] = new SpellInfo("1 Active Energy Cost/Second, +37% Damage to Undead, +13 Damage to Undead")
   Spells[3] = new SpellInfo("1 Active Energy Cost/Second, +42% Damage to Undead, +17 Damage to Undead")
@@ -200,7 +200,7 @@ function loadSpirit() {
   Skills[9] = new Skill("Spirit Bane", 10, Spells, 5, "Adds damage against undead to the attacks of those under the effect of Spirit Ward.")
 
   // Arcane Lore
-  Spells = new Array();
+    Spells = [];
   Spells[1] = new SpellInfo("4 Energy Cost, 1 Meter Radius, +10% Increase in Projectile Speed")
   Spells[2] = new SpellInfo("4 Energy Cost, 1.2 Meter Radius, +18% Increase in Projectile Speed")
   Spells[3] = new SpellInfo("4 Energy Cost, 1.4 Meter Radius, +26% Increase in Projectile Speed")
@@ -210,7 +210,7 @@ function loadSpirit() {
   Skills[10] = new Skill("Arcane Lore", 16, Spells, 2, "The magic practitioners of older civilizations devised many insidious techniques to bolster the destructive capabilities of their magical staves. Knowledge of these methods will unlock the true power of your staff attacks.")
 
   // Necrosis
-  Spells = new Array();
+    Spells = [];
   Spells[1] = new SpellInfo("1 Active Energy Cost/Second, -23% Bleeding Resistance, -23% Vitality Damage Resistance, -23% Life Leech Resistance")
   Spells[2] = new SpellInfo("1 Active Energy Cost/Second, -32% Bleeding Resistance, -32% Vitality Damage Resistance, -32% Life Leech Resistance")
   Spells[3] = new SpellInfo("1 Active Energy Cost/Second, -39% Bleeding Resistance, -39% Vitality Damage Resistance, -39% Life Leech Resistance")
@@ -222,7 +222,7 @@ function loadSpirit() {
   Skills[11] = new Skill("Necrosis", 16, Spells, 0, "Weakens the constitution of adjacent enemies making them more susceptible to attacks that directly damage their life such as vitality damage and life leeching.")
 
   // Enslave Spirit
-  Spells = new Array();
+    Spells = [];
   Spells[1] = new SpellInfo("90 Energy Cost, 36-48 Seconds of Mind Control")
   Spells[2] = new SpellInfo("92 Energy Cost, 40-54 Seconds of Mind Control")
   Spells[3] = new SpellInfo("94 Energy Cost, 44-60 Seconds of Mind Control")
@@ -238,7 +238,7 @@ function loadSpirit() {
   Skills[12] = new Skill("Enslave Spirit", 16, Spells, -1, "Slip through the barriers of your enemies' consciousness and dominate their mind, binding them to your will. While enslaved, your enemy will be forced to obey your commands, but eventually they will regain control of their mind and turn against you.")
 
   // Death Nova
-  Spells = new Array();
+    Spells = [];
   Spells[1] = new SpellInfo("60 Energy Cost, 6.0 Meter Radius, 11% Reduction to Enemy's Health, 33 Vitality Damage, 50% of Attack Damage Converted to Health")
   Spells[2] = new SpellInfo("62 Energy Cost, 6.0 Meter Radius, 13% Reduction to Enemy's Health, 42 Vitality Damage, 50% of Attack Damage Converted to Health")
   Spells[3] = new SpellInfo("63 Energy Cost, 6.0 Meter Radius, 15% Reduction to Enemy's Health, 51 Vitality Damage, 50% of Attack Damage Converted to Health")
@@ -254,7 +254,7 @@ function loadSpirit() {
   Skills[13] = new Skill("Death Nova", 16, Spells, 8, "Emits a wave of death that will deplete life from any living being it contacts.")
 
   // Unearthly Power
-  Spells = new Array();
+    Spells = [];
   Spells[1] = new SpellInfo("10 Active Health Cost/Second, +8% Damage, +8% Elemental Damage, +8% Vitality Damage")
   Spells[2] = new SpellInfo("10 Active Health Cost/Second, +14% Damage, +10% Elemental Damage, +14% Vitality Damage")
   Spells[3] = new SpellInfo("11 Active Health Cost/Second, +20% Damage, +14% Elemental Damage, +20% Vitality Damage")
@@ -266,7 +266,7 @@ function loadSpirit() {
   Skills[14] = new Skill("Unearthly Power", 24, Spells, 7, "Draw upon even greater otherworldly powers to augment yourself and allies in battle but be wary of the cost exacted from your own vitality.")
 
   // Wraith Shell
-  Spells = new Array();
+    Spells = [];
   Spells[1] = new SpellInfo("50 Energy Cost, 2 Active Energy Cost/Second, 19% Damage Absorption, 33% Damage Resistance")
   Spells[2] = new SpellInfo("50 Energy Cost, 2 Active Energy Cost/Second, 24% Damage Absorption, 33% Damage Resistance")
   Spells[3] = new SpellInfo("50 Energy Cost, 2 Active Energy Cost/Second, 28% Damage Absorption, 33% Damage Resistance")
@@ -282,7 +282,7 @@ function loadSpirit() {
   Skills[15] = new Skill("Wraith Shell", 24, Spells, 13, "Allows the Liche King to diminish its corporeal presence making it less vulnerable to all types of damage.")
 
   // Circle of Power
-  Spells = new Array();
+    Spells = [];
   Spells[1] = new SpellInfo("64 Energy Cost, 12 Second Duration, 6.0 Meter Radius, +17 Damage to Undead")
   Spells[2] = new SpellInfo("68 Energy Cost, 12 Second Duration, 6.0 Meter Radius, +21 Damage to Undead")
   Spells[3] = new SpellInfo("72 Energy Cost, 12 Second Duration, 6.0 Meter Radius, +25 Damage to Undead")
@@ -298,7 +298,7 @@ function loadSpirit() {
   Skills[16] = new Skill("Circle of Power", 24, Spells, -1, "Creates a circle of power that protects allies from the undead and damages any undead creatures that pass within it.")
 
   // Death Ward
-  Spells = new Array();
+    Spells = [];
   Spells[1] = new SpellInfo("Activates When Health Drops Below 15%, +330 Health Restored, 3 Second Duration")
   Spells[2] = new SpellInfo("Activates When Health Drops Below 15%, +360 Health Restored, 3 Second Duration")
   Spells[3] = new SpellInfo("Activates When Health Drops Below 15%, +390 Health Restored, 3 Second Duration")
@@ -310,7 +310,7 @@ function loadSpirit() {
   Skills[17] = new Skill("Death Ward", 32, Spells, -1, "Places a magical ward on the player that protects them from death by granting additional life when their life gets dangerously low.")
 
   // Summon Outsider
-  Spells = new Array();
+    Spells = [];
   Spells[1] = new SpellInfo("286 Energy Cost, Ether Lord Attributes: Life Time 30 Seconds, 1065 Health, 518 Energy, Ether Lord Abilities: Ether Strike, 27 Energy Cost, 200 Arc of Attack, 3 Target Maximum, 75-115 Elemental Damage, 33% Reduction to Enemy's Health")
   Spells[2] = new SpellInfo("292 Energy Cost, Ether Lord Attributes: Life Time 30 Seconds, 1130 Health, 536 Energy, Ether Lord Abilities: Ether Strike, 29 Energy Cost, 200 Arc of Attack, 3 Target Maximum, 83-124 Elemental Damage, 33% Reduction to Enemy's Health")
   Spells[3] = new SpellInfo("298 Energy Cost, Ether Lord Attributes: Life Time 30 Seconds, 1195 Health, 554 Energy, Ether Lord Abilities: Ether Strike, 31 Energy Cost, 200 Arc of Attack, 3 Target Maximum, 90-132 Elemental Damage, 33% Reduction to Enemy's Health")
@@ -330,7 +330,7 @@ function loadSpirit() {
   Skills[18] = new Skill("Summon Outsider", 32, Spells, -1, "Calls forth a powerful extra-dimensional entity from beyond the ether. The link can only be maintained for a short time.")
 
   // Arcane Blast
-  Spells = new Array();
+    Spells = [];
   Spells[1] = new SpellInfo("32 Energy Cost, 2 Projectiles, 51 Elemental Damage, 15 Vitality Damage, 1 Second of Stun, 15% Slowed for 1.5 Seconds")
   Spells[2] = new SpellInfo("33 Energy Cost, 2 Projectiles, 56 Elemental Damage, 19 Vitality Damage, 1 Second of Stun, 15% Slowed for 1.5 Seconds")
   Spells[3] = new SpellInfo("36 Energy Cost, 3 Projectiles, 61 Elemental Damage, 23 Vitality Damage, 1 Second of Stun, 15% Slowed for 1.5 Seconds")

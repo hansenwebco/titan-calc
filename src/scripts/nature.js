@@ -32,7 +32,7 @@ function loadNature() {
   if (!AttributesBase[0]) { // base att's are only set one time
     AttributesBase[0] = new Attribute(300, 300, 50, 50, 50) // base stats for characters
   }
-  Attributes = new Array();
+    let Attributes = [];
   Attributes[1] = new Attribute(20, 16, 0, 1, 2)
   Attributes[2] = new Attribute(40, 32, 0, 3, 5)
   Attributes[3] = new Attribute(60, 48, 0, 4, 7)
@@ -67,9 +67,9 @@ function loadNature() {
   Attributes[32] = new Attribute(640, 512, 0, 48, 80)
 
 
-  Skills = new Array();
+    let Skills = [];
   // Regrowth
-  Spells = new Array();
+    let Spells = [];
   Spells[1] = new SpellInfo("+240 Health Restored, 46 Energy Cost")
   Spells[2] = new SpellInfo("+300 Health Restored, 52 Energy Cost")
   Spells[3] = new SpellInfo("+370 Health Restored, 58 Energy Cost")
@@ -89,27 +89,27 @@ function loadNature() {
   Skills[0] = new Skill("Regrowth", 1, Spells, -1, "A wave of healing energy rapidly restores lost life to the target ally.")
 
   // Call of the Wild
-  Spells = new Array();
-  Spells[1] = new SpellInfo("120 Energy Cost, Feral Wolf Animal Companion Attributes: 165 Health, 45 Energy, Feral Wolf Animal Companion Abilities: Dodge Atttack (15% Chance to Dodge Attacks, +15% Chance to Avoid Projectiles)")
-  Spells[2] = new SpellInfo("124 Energy Cost, Feral Wolf Animal Companion Attributes: 193 Health, 48 Energy, Feral Wolf Animal Companion Abilities: Dodge Atttack (16% Chance to Dodge Attacks, +16% Chance to Avoid Projectiles)")
-  Spells[3] = new SpellInfo("128 Energy Cost, Feral Wolf Animal Companion Attributes: 222 Health, 51 Energy, Feral Wolf Animal Companion Abilities: Dodge Atttack (17% Chance to Dodge Attacks, +17% Chance to Avoid Projectiles)")
-  Spells[4] = new SpellInfo("132 Energy Cost, Feral Wolf Animal Companion Attributes: 252 Health, 54 Energy, Feral Wolf Animal Companion Abilities: Dodge Atttack (18% Chance to Dodge Attacks, +18% Chance to Avoid Projectiles)")
-  Spells[5] = new SpellInfo("136 Energy Cost, Feral Wolf Animal Companion Attributes: 280 Health, 57 Energy, Feral Wolf Animal Companion Abilities: Dodge Atttack (19% Chance to Dodge Attacks, +19% Chance to Avoid Projectiles)")
-  Spells[6] = new SpellInfo("140 Energy Cost, Feral Wolf Animal Companion Attributes: 310 Health, 60 Energy, Feral Wolf Animal Companion Abilities: Dodge Atttack (20% Chance to Dodge Attacks, +20% Chance to Avoid Projectiles)")
-  Spells[7] = new SpellInfo("144 Energy Cost, 2 Summon Limit, Feral Wolf Animal Companion Attributes: 338 Health, 63 Energy, Feral Wolf Animal Companion Abilities: Dodge Atttack (21% Chance to Dodge Attacks, +21% Chance to Avoid Projectiles)")
-  Spells[8] = new SpellInfo("148 Energy Cost, 2 Summon Limit, Feral Wolf Animal Companion Attributes: 369 Health, 66 Energy, Feral Wolf Animal Companion Abilities: Dodge Atttack (22% Chance to Dodge Attacks, +22% Chance to Avoid Projectiles)")
-  Spells[9] = new SpellInfo("152 Energy Cost, 2 Summon Limit, Feral Wolf Animal Companion Attributes: 397 Health, 69 Energy, Feral Wolf Animal Companion Abilities: Dodge Atttack (23% Chance to Dodge Attacks, +23% Chance to Avoid Projectiles)")
-  Spells[10] = new SpellInfo("156 Energy Cost, 2 Summon Limit, Feral Wolf Animal Companion Attributes: 427 Health, 72 Energy, Feral Wolf Animal Companion Abilities: Dodge Atttack (24% Chance to Dodge Attacks, +24% Chance to Avoid Projectiles)")
-  Spells[11] = new SpellInfo("160 Energy Cost, 2 Summon Limit, Feral Wolf Animal Companion Attributes: 457 Health, 75 Energy, Feral Wolf Animal Companion Abilities: Dodge Atttack (25% Chance to Dodge Attacks, +25% Chance to Avoid Projectiles)")
-  Spells[12] = new SpellInfo("164 Energy Cost, 2 Summon Limit, Feral Wolf Animal Companion Attributes: 488 Health, 78 Energy, Feral Wolf Animal Companion Abilities: Dodge Atttack (26% Chance to Dodge Attacks, +26% Chance to Avoid Projectiles)")
-  Spells[13] = new SpellInfo("168 Energy Cost, 2 Summon Limit, Feral Wolf Animal Companion Attributes: 518 Health, 81 Energy, Feral Wolf Animal Companion Abilities: Dodge Atttack (27% Chance to Dodge Attacks, +27% Chance to Avoid Projectiles)")
-  Spells[14] = new SpellInfo("172 Energy Cost, 2 Summon Limit, Feral Wolf Animal Companion Attributes: 548 Health, 84 Energy, Feral Wolf Animal Companion Abilities: Dodge Atttack (28% Chance to Dodge Attacks, +28% Chance to Avoid Projectiles)")
-  Spells[15] = new SpellInfo("176 Energy Cost, 2 Summon Limit, Feral Wolf Animal Companion Attributes: 581 Health, 87 Energy, Feral Wolf Animal Companion Abilities: Dodge Atttack (29% Chance to Dodge Attacks, +29% Chance to Avoid Projectiles)")
-  Spells[16] = new SpellInfo("180 Energy Cost, 2 Summon Limit, Feral Wolf Animal Companion Attributes: 612 Health, 90 Energy, Feral Wolf Animal Companion Abilities: Dodge Atttack (30% Chance to Dodge Attacks, +30% Chance to Avoid Projectiles)")
+    Spells = [];
+    Spells[1] = new SpellInfo("120 Energy Cost, Feral Wolf Animal Companion Attributes: 165 Health, 45 Energy, Feral Wolf Animal Companion Abilities: Dodge Attack (15% Chance to Dodge Attacks, +15% Chance to Avoid Projectiles)")
+    Spells[2] = new SpellInfo("124 Energy Cost, Feral Wolf Animal Companion Attributes: 193 Health, 48 Energy, Feral Wolf Animal Companion Abilities: Dodge Attack (16% Chance to Dodge Attacks, +16% Chance to Avoid Projectiles)")
+    Spells[3] = new SpellInfo("128 Energy Cost, Feral Wolf Animal Companion Attributes: 222 Health, 51 Energy, Feral Wolf Animal Companion Abilities: Dodge Attack (17% Chance to Dodge Attacks, +17% Chance to Avoid Projectiles)")
+    Spells[4] = new SpellInfo("132 Energy Cost, Feral Wolf Animal Companion Attributes: 252 Health, 54 Energy, Feral Wolf Animal Companion Abilities: Dodge Attack (18% Chance to Dodge Attacks, +18% Chance to Avoid Projectiles)")
+    Spells[5] = new SpellInfo("136 Energy Cost, Feral Wolf Animal Companion Attributes: 280 Health, 57 Energy, Feral Wolf Animal Companion Abilities: Dodge Attack (19% Chance to Dodge Attacks, +19% Chance to Avoid Projectiles)")
+    Spells[6] = new SpellInfo("140 Energy Cost, Feral Wolf Animal Companion Attributes: 310 Health, 60 Energy, Feral Wolf Animal Companion Abilities: Dodge Attack (20% Chance to Dodge Attacks, +20% Chance to Avoid Projectiles)")
+    Spells[7] = new SpellInfo("144 Energy Cost, 2 Summon Limit, Feral Wolf Animal Companion Attributes: 338 Health, 63 Energy, Feral Wolf Animal Companion Abilities: Dodge Attack (21% Chance to Dodge Attacks, +21% Chance to Avoid Projectiles)")
+    Spells[8] = new SpellInfo("148 Energy Cost, 2 Summon Limit, Feral Wolf Animal Companion Attributes: 369 Health, 66 Energy, Feral Wolf Animal Companion Abilities: Dodge Attack (22% Chance to Dodge Attacks, +22% Chance to Avoid Projectiles)")
+    Spells[9] = new SpellInfo("152 Energy Cost, 2 Summon Limit, Feral Wolf Animal Companion Attributes: 397 Health, 69 Energy, Feral Wolf Animal Companion Abilities: Dodge Attack (23% Chance to Dodge Attacks, +23% Chance to Avoid Projectiles)")
+    Spells[10] = new SpellInfo("156 Energy Cost, 2 Summon Limit, Feral Wolf Animal Companion Attributes: 427 Health, 72 Energy, Feral Wolf Animal Companion Abilities: Dodge Attack (24% Chance to Dodge Attacks, +24% Chance to Avoid Projectiles)")
+    Spells[11] = new SpellInfo("160 Energy Cost, 2 Summon Limit, Feral Wolf Animal Companion Attributes: 457 Health, 75 Energy, Feral Wolf Animal Companion Abilities: Dodge Attack (25% Chance to Dodge Attacks, +25% Chance to Avoid Projectiles)")
+    Spells[12] = new SpellInfo("164 Energy Cost, 2 Summon Limit, Feral Wolf Animal Companion Attributes: 488 Health, 78 Energy, Feral Wolf Animal Companion Abilities: Dodge Attack (26% Chance to Dodge Attacks, +26% Chance to Avoid Projectiles)")
+    Spells[13] = new SpellInfo("168 Energy Cost, 2 Summon Limit, Feral Wolf Animal Companion Attributes: 518 Health, 81 Energy, Feral Wolf Animal Companion Abilities: Dodge Attack (27% Chance to Dodge Attacks, +27% Chance to Avoid Projectiles)")
+    Spells[14] = new SpellInfo("172 Energy Cost, 2 Summon Limit, Feral Wolf Animal Companion Attributes: 548 Health, 84 Energy, Feral Wolf Animal Companion Abilities: Dodge Attack (28% Chance to Dodge Attacks, +28% Chance to Avoid Projectiles)")
+    Spells[15] = new SpellInfo("176 Energy Cost, 2 Summon Limit, Feral Wolf Animal Companion Attributes: 581 Health, 87 Energy, Feral Wolf Animal Companion Abilities: Dodge Attack (29% Chance to Dodge Attacks, +29% Chance to Avoid Projectiles)")
+    Spells[16] = new SpellInfo("180 Energy Cost, 2 Summon Limit, Feral Wolf Animal Companion Attributes: 612 Health, 90 Energy, Feral Wolf Animal Companion Abilities: Dodge Attack (30% Chance to Dodge Attacks, +30% Chance to Avoid Projectiles)")
   Skills[1] = new Skill("Call of the Wild", 1, Spells, -1, "Summons a wolf companion to fight with you in battle. At higher levels more wolves can be controlled at once.")
 
   // Heart of Oak
-  Spells = new Array();
+    Spells = [];
   Spells[1] = new SpellInfo("1 Active Energy Cost/Second, 18.0 Meter Radius, +10% Health, +10% Total Speed, +100 Energy Reserved")
   Spells[2] = new SpellInfo("1 Active Energy Cost/Second, 18.0 Meter Radius, +15% Health, +10% Total Speed, +100 Energy Reserved")
   Spells[3] = new SpellInfo("1 Active Energy Cost/Second, 18.0 Meter Radius, +20% Health, +10% Total Speed, +100 Energy Reserved")
@@ -125,7 +125,7 @@ function loadNature() {
   Skills[2] = new Skill("Heart of Oak", 4, Spells, -1, "Bolsters the life-force of yourself and nearby allies.")
 
   // Accelerated Growth
-  Spells = new Array();
+    Spells = [];
   Spells[1] = new SpellInfo("-18% Recharge")
   Spells[2] = new SpellInfo("-26% Recharge")
   Spells[3] = new SpellInfo("-34% Recharge")
@@ -137,7 +137,7 @@ function loadNature() {
   Skills[3] = new Skill("Accelerated Growth", 4, Spells, 0, "Allows Regrowth to be cast more frequently.")
 
   // Maul
-  Spells = new Array();
+    Spells = [];
   Spells[1] = new SpellInfo("24 Energy Cost, 17 Bleeding Damage Over 3 Seconds, 3 Piercing Damage, 6% Reduction to Enemy's Health")
   Spells[2] = new SpellInfo("24 Energy Cost, 25 Bleeding Damage Over 3 Seconds, 5 Piercing Damage, 6% Reduction to Enemy's Health")
   Spells[3] = new SpellInfo("24 Energy Cost, 33 Bleeding Damage Over 3 Seconds, 7 Piercing Damage, 8% Reduction to Enemy's Health")
@@ -153,7 +153,7 @@ function loadNature() {
   Skills[4] = new Skill("Maul", 4, Spells, 1, "A gnawing attack that rends enemy flesh causing bleed damage for a short duration.")
 
   // Plague
-  Spells = new Array();
+    Spells = [];
   Spells[1] = new SpellInfo("64 Energy Cost, 3.0 Second Duration, 3-8% Reduction to Enemy's Health")
   Spells[2] = new SpellInfo("66 Energy Cost, 3.4 Second Duration, 4-9% Reduction to Enemy's Health")
   Spells[3] = new SpellInfo("67 Energy Cost, 4.0 Second Duration, 5-10% Reduction to Enemy's Health")
@@ -165,7 +165,7 @@ function loadNature() {
   Skills[5] = new Skill("Plague", 4, Spells, -1, "Afflicts target with a debilitating ailment that reduces their health and quickly spreads to nearby enemies.")
 
   // Briar Ward
-  Spells = new Array();
+    Spells = [];
   Spells[1] = new SpellInfo("112 Energy Cost, Briar Thicket Attributes: Life Time 30 Seconds, 64 Health, 0 Energy, Briar Thicket Abilities: Thorns (1-3 Piercing Retaliation)")
   Spells[2] = new SpellInfo("116 Energy Cost, Briar Thicket Attributes: Life Time 30 Seconds, 88 Health, 0 Energy, Briar Thicket Abilities: Thorns (1-3 Piercing Retaliation)")
   Spells[3] = new SpellInfo("120 Energy Cost, Briar Thicket Attributes: Life Time 30 Seconds, 112 Health, 0 Energy,Briar Thicket Abilities: Thorns (1-3 Piercing Retaliation)")
@@ -185,7 +185,7 @@ function loadNature() {
   Skills[6] = new Skill("Briar Ward", 10, Spells, -1, "A protective grove of briars grows around you that enemies cannot pass through.")
 
   // Survival Instinct
-  Spells = new Array();
+    Spells = [];
   Spells[1] = new SpellInfo("Activates When Health Drops Below 33%, 15% Damage Absorption, 6 Second Duration, +15% Damage")
   Spells[2] = new SpellInfo("Activates When Health Drops Below 33%, 20% Damage Absorption, 6 Second Duration, +20% Damage")
   Spells[3] = new SpellInfo("Activates When Health Drops Below 33%, 24% Damage Absorption, 6 Second Duration, +25% Damage")
@@ -205,7 +205,7 @@ function loadNature() {
   Skills[7] = new Skill("Survival Instinct", 10, Spells, 4, "An instinctual will to live is triggered whenever health is low.")
 
   // Fatigue
-  Spells = new Array();
+    Spells = [];
   Spells[1] = new SpellInfo("(-3) Damage, 5% Chance of 50% Reduction to Enemy's Health, 15% Reduced Damage for 3 Seconds, -15% Total Speed")
   Spells[2] = new SpellInfo("(-3)-(-5) Damage, 5% Chance of 52% Reduction to Enemy's Health, 18% Reduced Damage for 3 Seconds, -18% Total Speed")
   Spells[3] = new SpellInfo("(-3)-(-6) Damage, 5% Chance of 55% Reduction to Enemy's Health, 20% Reduced Damage for 3 Seconds, -20% Total Speed")
@@ -217,7 +217,7 @@ function loadNature() {
   Skills[8] = new Skill("Fatigue", 10, Spells, 5, "Saps the strength from diseased enemies causing them to move more slowly and fight less effectively.")
 
   // Tranquility of Water
-  Spells = new Array();
+    Spells = [];
   Spells[1] = new SpellInfo("8% Chance of -50% Energy Cost")
   Spells[2] = new SpellInfo("12% Chance of -50% Energy Cost")
   Spells[3] = new SpellInfo("16% Chance of -50% Energy Cost")
@@ -227,7 +227,7 @@ function loadNature() {
   Skills[9] = new Skill("Tranquility of Water", 16, Spells, 2, "Provides a chance to use skills at 50% reduced energy cost while under the effect of Heart of Oak.")
 
   // Dissemination
-  Spells = new Array();
+    Spells = [];
   Spells[1] = new SpellInfo("+180 Health Restored")
   Spells[2] = new SpellInfo("+260 Health Restored")
   Spells[3] = new SpellInfo("+350 Health Restored")
@@ -243,7 +243,7 @@ function loadNature() {
   Skills[10] = new Skill("Dissemination", 16, Spells, 0, "Causes regrowth energy to disseminate from the initial target and leap to additional nearby allies.")
 
   // Stinging Nettle
-  Spells = new Array();
+    Spells = [];
   Spells[1] = new SpellInfo("15 Poison Retaliation Over 6 Seconds")
   Spells[2] = new SpellInfo("24 Poison Retaliation Over 6 Seconds")
   Spells[3] = new SpellInfo("33 Poison Retaliation Over 6 Seconds")
@@ -255,7 +255,7 @@ function loadNature() {
   Skills[11] = new Skill("Stinging Nettle", 16, Spells, 6, "Causes enemies who hit the Briar Ward to suffer poisoning.")
 
   // Sylvan Nymph
-  Spells = new Array();
+    Spells = [];
   Spells[1] = new SpellInfo("200 Energy Cost, 1.0 Meter Radius, Sylvan Nymph Wanderer's Familiar Attributes: 199 Health, 130 Energy, Sylvan Nymph Wanderer's Familiar Ability 1: Bow Attack (9-21 Piercing Damage, 3% Reduction to Enemy's Health), Sylvan Nymph Wanderer's Familiar Ability 2: Dodge Attack (18% Chance to Dodge Attacks, +18% Chance to Avoid Projectiles)")
   Spells[2] = new SpellInfo("204 Energy Cost, 1.0 Meter Radius, Sylvan Nymph Wanderer's Familiar Attributes: 228 Health, 138 Energy, Sylvan Nymph Wanderer's Familiar Ability 1: Bow Attack (12-25 Piercing Damage, 3% Reduction to Enemy's Health), Sylvan Nymph Wanderer's Familiar Ability 2: Dodge Attack (20% Chance to Dodge Attacks, +20% Chance to Avoid Projectiles)")
   Spells[3] = new SpellInfo("209 Energy Cost, 1.0 Meter Radius, Sylvan Nymph Wanderer's Familiar Attributes: 258 Health, 146 Energy, Sylvan Nymph Wanderer's Familiar Ability 1: Bow Attack (15-28 Piercing Damage, 3% Reduction to Enemy's Health), Sylvan Nymph Wanderer's Familiar Ability 2: Dodge Attack (22% Chance to Dodge Attacks, +22% Chance to Avoid Projectiles)")
@@ -275,7 +275,7 @@ function loadNature() {
   Skills[12] = new Skill("Sylvan Nymph", 16, Spells, -1, "Summons a powerful forest Nymph who can bring down enemies with her magical bow and cast enchantments to strengthen allies in battle.")
 
   // Permanence of Stone
-  Spells = new Array();
+    Spells = [];
   Spells[1] = new SpellInfo("1 Active Energy Cost/Second, 5% Elemental Resistance")
   Spells[2] = new SpellInfo("1 Active Energy Cost/Second, 8% Elemental Resistance")
   Spells[3] = new SpellInfo("1 Active Energy Cost/Second, 10% Elemental Resistance")
@@ -285,7 +285,7 @@ function loadNature() {
   Skills[13] = new Skill("Permanence of Stone", 24, Spells, 2, "Protects allies from the elements, reducing the damage caused by elemental based attacks.")
 
   // Strength of the Pack
-  Spells = new Array();
+    Spells = [];
   Spells[1] = new SpellInfo("25 Energy Cost, 15 Second Duration, 10.0 Meter Radius, +15% Damage, +1 Energy Regeneration/Second, +15% Total Speed, 4 Armor")
   Spells[2] = new SpellInfo("25 Energy Cost, 15 Second Duration, 10.0 Meter Radius, +20% Damage, +1 Energy Regeneration/Second, +15% Total Speed, 6 Armor")
   Spells[3] = new SpellInfo("25 Energy Cost, 15 Second Duration, 10.0 Meter Radius, +24% Damage, +1 Energy Regeneration/Second, +15% Total Speed, 8 Armor")
@@ -301,7 +301,7 @@ function loadNature() {
   Skills[14] = new Skill("Strength of the Pack", 23, Spells, 7, "The howl of your wolves emboldens the hearts of those who hear it causing them to fight more fiercely.")
 
   // Overgrowth
-  Spells = new Array();
+    Spells = [];
   Spells[1] = new SpellInfo("78 Damage Absorption, 33% Chance of 1-5 Piercing Retaliation")
   Spells[2] = new SpellInfo("86 Damage Absorption, 33% Chance of 3-7 Piercing Retaliation")
   Spells[3] = new SpellInfo("95 Damage Absorption, 33% Chance of 4-9 Piercing Retaliation")
@@ -317,7 +317,7 @@ function loadNature() {
   Skills[15] = new Skill("Overgrowth", 24, Spells, 12, "Allows the Nymph to create a living shield around allies that absorbs damage and harms enemies that strike it.")
 
   // Susceptibility
-  Spells = new Array();
+    Spells = [];
   Spells[1] = new SpellInfo("-12% Damage Resistance, -12% Elemental Resistance")
   Spells[2] = new SpellInfo("-15% Damage Resistance, -15% Elemental Resistance")
   Spells[3] = new SpellInfo("-19% Damage Resistance, -19% Elemental Resistance")
@@ -329,7 +329,7 @@ function loadNature() {
   Skills[16] = new Skill("Susceptibility", 24, Spells, 5, "Weakens the constitution of adjacent enemies making them more susceptible to poison and damage from the elements.")
 
   // Refresh
-  Spells = new Array();
+    Spells = [];
   Spells[1] = new SpellInfo("-8.0 Second[s] to Recharge Time, 30 Energy Cost")
   Spells[2] = new SpellInfo("-12.0 Second[s] to Recharge Time, 45 Energy Cost")
   Spells[3] = new SpellInfo("-16.0 Second[s] to Recharge Time, 60 Energy Cost")
@@ -345,7 +345,7 @@ function loadNature() {
   Skills[17] = new Skill("Refresh", 32, Spells, -1, "Subtracts time from recharging skills allows you to use them more frequently.")
 
   // Sanctuary
-  Spells = new Array();
+    Spells = [];
   Spells[1] = new SpellInfo("10% Damage Absorption, 18 Second Duration, 3.0 Meter Radius, +50% Health Regeneration, +50% Energy Regeneration")
   Spells[2] = new SpellInfo("12% Damage Absorption, 18 Second Duration, 3.0 Meter Radius, +68% Health Regeneration, +68% Energy Regeneration")
   Spells[3] = new SpellInfo("14% Damage Absorption, 18 Second Duration, 3.0 Meter Radius, +86% Health Regeneration, +86% Energy Regeneration")
@@ -357,7 +357,7 @@ function loadNature() {
   Skills[18] = new Skill("Sanctuary", 32, Spells, 11, "The power of the grove revitalizes those within and reduces the energy consumed by skill use.")
 
   // Nature's Wrath
-  Spells = new Array();
+    Spells = [];
   Spells[1] = new SpellInfo("8 Energy Cost, 1.5 Meter Radius, 33% Chance to Pass Through Enemies, 33-58 Elemental Damage")
   Spells[2] = new SpellInfo("8 Energy Cost, 1.5 Meter Radius, 33% Chance to Pass Through Enemies, 38-66 Elemental Damage")
   Spells[3] = new SpellInfo("9 Energy Cost, 1.5 Meter Radius, 33% Chance to Pass Through Enemies, 42-74 Elemental Damage")
